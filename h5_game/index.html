@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="keyword" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/index.css">
+    <title>爵迹</title>
+</head>
+<body>
+<div class="wrap">
+    <!--音频播放-->
+    <div class="muse"></div>
+   <!-- <audio id="media" loop="loop" autoplay="autoplay" src="images/muse.mp3"></audio>-->
+    <!--第一页-->
+    <div class="page page1">
+        <div class="smoke">
+            <canvas id="smokeCanvas"></canvas>
+        </div>
+        <div class="zjcs"></div>
+    </div>
+    <!--第二页-->
+    <div class="page page2 ">
+        <div class="lod-wz-cont">
+
+        </div>
+        <div class="lodBox">
+            <div class="lodRang">
+                <div class="lodRangCont">
+                    <div class="loadCont"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--遮罩层-->
+    <div class="zezhao dis"></div>
+    <div class="zezhao-ov dis"></div>
+    <div class="page page3 ">
+
+        <!--<div class="xku"></div>-->
+        <div class="wf-mai"></div>
+        <!--<div class="tips"></div>-->
+        <div class="wm"></div>
+        <div class="wf-title"></div>
+        <div class="done"></div>
+    </div>
+    <div class="page page4 ">
+        <div class="time-show"><span>05</span><span>00</span></div>
+        <ul class="main">
+            <li class="on">
+                <div>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </li>
+            <li class="on">
+             <div>
+                 <span></span>
+                 <span></span>
+             </div>
+
+            </li>
+            <li class="on">
+                <div>
+                    <span></span>
+                    <span></span>
+                </div>
+            </li>
+            <li class="on">
+                <div>
+                    <span></span>
+                    <span></span>
+                </div>
+            </li>
+            <li class="on">
+                <div>
+                    <span></span>
+                    <span></span>
+                </div>
+            </li>
+            <li class="on">
+                <div>
+                    <span></span>
+                    <span></span>
+                </div>
+            </li>
+            <li class="on">
+                <div>
+                    <span></span>
+                    <span></span>
+                </div>
+            </li>
+            <li class="on">
+                <div>
+                    <span></span>
+                    <span></span>
+                </div>
+            </li>
+            <li class="on">
+                <div>
+                    <span></span>
+                    <span></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!---------------------------------------------->
+    <!--游戏结束过渡-->
+    <div class="gameover"></div>
+    <!--游戏失败-->
+    <div class="over dis">
+        <div class="over-title"></div>
+        <div class="over-win dis"></div>
+        <ul>
+            <li class="left" onclick="location.reload()"></li>
+            <li class="right"></li>
+        </ul>
+    </div>
+    <!--游戏成功-->
+    <div class="g-btn dis">
+        <ul>
+            <li class="left" onclick="location.reload()"></li>
+            <li class="right"></li>
+        </ul>
+    </div>
+    <div class="good dis">
+        <div class="game2"></div>
+        <div class="good-head"></div>
+    </div>
+</div>
+<script src="js/zepto.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/m.js"></script>
+<script src="js/drawSomke.js"></script>
+<script>
+    //$('.animateFront').animate({'color':'red'},2000,function () {
+    //    $(this).hide();
+    //}) var a =new f
+    var a= new FindSure();
+    window.onload=function(){
+
+          a.init();
+
+    }
+
+    // IE9+烟雾效果走起
+    if ([].map) {
+        canvasSmoke(document.querySelector('#smokeCanvas'));
+    }
+</script>
+</body>
+</html>

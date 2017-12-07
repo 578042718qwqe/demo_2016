@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>图片加载技术实例-欢迎关注tinyphp的博客</title>
+    <script src="http://ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(function() {
+            $("img").lazyload({
+                placeholder : "images/loading.gif",
+                effect: "fadeIn"
+            });
+        });
+    </script>
+    <style>
+        img a,img{border:0px;}
+        div{ margin-bottom:10px;}
+    </style>
+</head>
+<body>
+<div style="height: 900px;"></div>
+<div><a href="#"><img src="img/loding.gif" data-original="img/shoping-11.jpg"></a></div>
+<div><a href="#"><img src="img/loding.gif" data-original="img/shoping-11.jpg"></a></div>
+<div><a href="#"><img src="img/loding.gif" data-original="img/shoping-11.jpg"></a></div>
+<div><a href="#"><img src="img/loding.gif" data-original="img/shoping-11.jpg"></a></div>
+<div><a href="#"><img src="img/loding.gif" data-original="img/shoping-11.jpg"></a></div>
+<div><a href="#"><img src="img/loding.gif" data-original="img/shoping-11.jpg"></a></div>
+<div><a href="#"><img src="img/loding.gif" data-original="img/shoping-11.jpg"></a></div>
+<div><a href="#"><img src="img/loding.gif" data-original="img/shoping-11.jpg"></a></div>
+<div><a href="#"><img src="img/loding.gif" data-original="img/shoping-11.jpg"></a></div>
+<div><a href="#"><img src="img/loding.gif" data-original="img/shoping-11.jpg"></a></div>
+</body>
+</html>
