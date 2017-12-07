@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="keyword" content="">
+    <title></title>
+    <!--<meta itemprop="name" content=""/>
+    <meta itemprop="image" name="image" content="http://h5.wulifun.cn/jueji/static/images/chat.jpg" />
+    <meta name="description" itemprop="description" content="" />-->
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/animate.css">
+    <script src="static/js/zepto.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <script src="static/js/m.js"></script>
+</head>
+<body>
+<div class="bg">
+        <div class="muse"></div>
+        <audio id="media" loop="loop" autoplay="autoplay" src="static/images/muse.mp3"></audio>
+        <!--第一页面-->
+        <div class="pageview1">
+            <div id="pageview1-1">
+                <div class="header"></div>
+                <div class="pageview1-1-a"></div>
+                <div class="pageview1-1-b"></div>
+            </div>
+            <div class="pageview1-2 animated bounceInDown">
+                <div class="page1-btn"></div>
+                <div class="page1-btn-an"><img src="static/images/hongbao-an.gif"></div>
+            </div>
+            <!--背景-->
+            <div class="pageview1-bg"></div>
+            <div class="lunpan-2">
+                <div id="oDiv">
+                    <ul id="oUl">
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pageview1-bg-icon">
+                <div class="pageview1-bg-open"></div>
+            </div>
+            <!--背景小鸡-->
+            <div class="left-jj"></div>
+            <div class="right-jj"></div>
+        </div>
+        <!--随机出现页面-->
+        <div class="answer1 animated bounceInDown fu">
+            <div class="answer-btn-title"><span>5元游戏大礼包</span><input class="copy-num" type="text" value="5784812124" disabled="disabled"><a class="answerl-c">截图保存兑换码</a></div>
+            <div class="answer1-index">下载《鲜果消消乐》领取鲜果拜年游戏礼包</div>
+            <div class="answer1-index2">分享给好友,再拆一次红包</div>
+            <div class="answer1-tanchuang">
+                <div class="answer1-tanchuang-w"></div>
+            </div>
+            <div class="answer-bg"></div>
+            <div class="answer-btn-l"></div>
+            <div class="answer-btn-r3"></div>
+        </div>
+        <div class="answer2 animated bounceInDown fu">
+            <div class="answer-btn-title"><span>5元游戏大礼包</span><input class="copy-num" type="text" value="6666666666" disabled="disabled"><a class="answerl-c">截图保存兑换码</a></div>
+            <div class="answer1-index">下载《鲜果消消乐》领取鲜果拜年游戏礼包</div>
+            <div class="answer1-index2">分享给好友,再拆一次红包</div>
+            <div class="answer1-tanchuang">
+                <div class="answer1-tanchuang-w"></div>
+            </div>
+            <div class="answer-bg"></div>
+            <div class="answer-btn-l"></div>
+            <div class="answer-btn-r3"></div>
+        </div>
+        <div class="answer3 animated bounceInDown fu">
+            <div class="answer-btn-title">兔叽手机指环扣 <span>（价值38元）</span></div>
+            <div class="answer3-index">分享给好友,再拆一次红包</div>
+            <div class="answer-btn-l"></div>
+            <a class="answer-btn-r"></a>
+        </div>
+        <div class="answer4 animated bounceInDown fu">
+            <div class="answer-btn-title">兔叽手机指环扣 <span>（价值58元）</span></div>
+            <div class="answer4-index">分享给好友,再拆一次红包</div>
+            <div class="answer-btn-l"></div>
+            <div class="answer-btn-r"></div>
+        </div>
+        <div class="answer5 animated bounceInDown fu">
+            <div class="answer-btn-title">兔叽手机指环扣 <span>（价值188元）</span></div>
+            <div class="answer5-index">分享给好友,再拆一次红包</div>
+            <div class="answer-btn-l"></div>
+            <div class="answer-btn-r"></div>
+        </div>
+        <div class="answer-all-bg"></div>
+        <!--奖品-->
+        <div class="prize0">
+            <input type="text" value="６６６Ｐ８ＸＸ４" name="text" readonly="readonly" class="prize0-text">
+            <div class="prize0-top"></div>
+            <div class="prize0-bttom"></div>
+        </div>
+        <div class="prize1">
+            <div class="cg">
+                <div class="cg-bttom"></div>
+            </div>
+            <div class="cg-bg"></div>
+            <form>
+                <input class="prize1-name"  type="text" name="name" value="">
+                <input class="prize1-tell" type="text"  name="tel" value="" id="iptext">
+                <textarea class="prize1-dizhi" rows="5" name="address"  cols="10"></textarea>
+
+                <input type="button" name="" value="" class="prize1-1" onclick="PostData()">
+            </form>
+        </div>
+        <!--分享页面-->
+        <div class="share-tuzi"></div>
+        <div class="share"></div>
+        <!--下载-->
+        <div class="download"></div>
+        <!--提交成功-->
+        <div class="answer6 animated bounceInDown fu">
+            <div class="answer-btn-title">兔叽手机指环扣 <span>（价值38元）</span></div>
+            <div class="answer3-index">分享给好友,再拆一次红包</div>
+            <div class="answer-btn-l"></div>
+            <div class="answer6-btn-r"></div>
+        </div>
+        <div class="answer7 animated bounceInDown fu">
+            <div class="answer-btn-title">兔叽手机指环扣 <span>（价值58元）</span></div>
+            <div class="answer4-index">分享给好友,再拆一次红包</div>
+            <div class="answer-btn-l"></div>
+            <div class="answer6-btn-r"></div>
+        </div>
+        <div class="answer8 animated bounceInDown fu">
+            <div class="answer-btn-title">兔叽手机指环扣 <span>（价值188元）</span></div>
+            <div class="answer5-index">分享给好友,再拆一次红包</div>
+            <div class="answer-btn-l"></div>
+            <div class="answer6-btn-r"></div>
+        </div>
+</div>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+    function PostData() {
+        var hao = $("#iptext").val();
+        var re = /^0?1[3|4|5|8][0-9]\d{8}$/;
+        if (!re.test(hao)) {
+            alert('请输入正确的手机号码。');
+            return false;
+        }
+        $.ajax({
+            type: 'POST',
+            url: 'http://h5.wulifun.cn/xgxxl/new_year/submit',
+            data:{name:$(".prize1-name").val(),tel:$(".prize1-tell").val(),address:$(".prize1-dizhi").val()},
+            success: function (s) {
+                $(".cg").show();
+                $(".cg-bg").show();
+                console.log(s);
+            }
+        });
+        $(".cg,.cg-bg").bind("tap",function () {
+            $(".cg,.cg-bg").hide();
+        });
+    }
+    function checkForm(o) {
+        /*var re = /^0?1[3|4|5|8][0-9]\d{8}$/;
+        if (!re.test(o.tel.value)) {
+            alert('请输入正确的手机号码。');
+            return false;
+        }*/
+    }
+</script>
+<script>
+    var a= new FindSure(/*{{jsapi_config|tojson|safe}}*/);
+    window.onload=function(){
+        a.init();
+    }
+</script>
+</body>
+</html>

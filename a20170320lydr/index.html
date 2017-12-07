@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="gb2312"/>
+    <meta name="applicable-device" content="mobile">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+    <meta name="viewport" content="width=320,minimum-scale=0,maximum-scale=5,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta name="robots" content="all" />
+    <meta name="author" content="Tencent-TGideas" />
+    <meta name="Copyright" content="Tencent" />
+    <meta name="Description" content="" />
+    <meta name="Keywords" content="" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="http://ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+    <title>官网</title>
+    <!-- 设计:cp | 重构:cp | 创建时间:16-08-15 -->
+    <style>
+        @media only screen and (max-width:1536px),only screen and (max-device-width:1536px){body,html{font-size:240px}}
+        @media only screen and (max-width:1080px),only screen and (max-device-width:1080px){body,html{font-size:337.5px}}
+        @media only screen and (max-width:960px),only screen and (max-device-width:960px){body,html{font-size:300px}}
+        @media only screen and (max-width:800px),only screen and (max-device-width:800px){body,html{font-size:250px}}
+        @media only screen and (max-width:720px),only screen and (max-device-width:720px){body,html{font-size:225px}}
+        @media only screen and (max-width:640px),only screen and (max-device-width:640px){body,html{font-size:200px}}
+        @media only screen and (max-width:600px),only screen and (max-device-width:600px){body,html{font-size:187.5px}}
+        @media only screen and (max-width:540px),only screen and (max-device-width:540px){body,html{font-size:168.75px}}
+        @media only screen and (max-width:480px),only screen and (max-device-width:480px){body,html{font-size:150px}}
+        @media only screen and (max-width:414px),only screen and (max-device-width:414px){body,html{font-size:129.38px}}
+        @media only screen and (max-width:400px),only screen and (max-device-width:400px){body,html{font-size:125px}}
+        @media only screen and (max-width:375px),only screen and (max-device-width:375px){body,html{font-size:117.19px}}
+        @media only screen and (max-width:360px),only screen and (max-device-width:360px){body,html{font-size:112.5px}}
+        @media only screen and (max-width:320px),only screen and (max-device-width:320px){body,html{font-size:100px}}
+        @media only screen and (max-width:240px),only screen and (max-device-width:240px){body,html{font-size:75px}}
+        /*头部样式*/
+        b,body,dd,dl,dt,form,h1,h2,h3,h4,header,i,img,input,ol,p,rb,rt,ruby,section,ul{margin:0;padding:0;font-style:normal}
+        body,h1,h2,html{font-family:"微软雅黑",Helvetica,STHeiTi,sans-serif;font-weight:400;line-height:1}
+        i{display:block;font-style:normal}
+        li{list-style:none}
+        a{text-decoration:none}
+        img{border:0}
+        section{font-size:.16rem;}
+        /*swiper部分*/
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+        body {
+            background:#081131;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        .swiper-slide{ position: relative;}
+        .swiper-slide img{ width: 100%; height: 100%;}
+        /*内容2*/
+        .head{ width: 100%; height:.5rem; background: rgba(0,0,0,.65); position: fixed; top: 0; left: 0; z-index: 999;}
+        .logo{ width:.4rem; height:.4rem; padding-top:.05rem; padding-left:.11rem; float: left;}
+        .logo img{ width: 100%;}
+        .tmemo{ float: left; width:1.65rem; padding-left:.1rem; color:#6b82b5;}
+        .tmemo b{ float: left; width:1.65rem; color: #FFF; line-height:.28rem;}
+        .btoom{ float: left; width:.85rem; margin-top:.08rem;}
+        .btoom img{ width:100%;}
+        .jp{ width: 100%; height:1.5rem;}
+        .jp-bg{position: absolute; width:100%; height:3.2rem; z-index: 999; top:.6rem; left: 0; background: url("ossweb-img/circle2.png") .07rem .4rem no-repeat; background-size:3.1rem;}
+        .jp-0{position: absolute; width:.8rem; height:.8rem; z-index: 99999; background-size: 100%; left:.3rem; top:2.35rem;}
+        .jp-1{position: absolute; width:.8rem; height:.8rem; z-index: 99999; background-size: 100%; left:1.2rem; top:2.35rem;}
+        .jp-2{position: absolute; width:.8rem; height:.8rem; z-index: 99999; background-size: 100%; left:2.1rem; top:2.35rem;}
+        .jp-0.on{ background: url("ossweb-img/jp.png") center center no-repeat; background-size:85%;}
+        .jp-1.on{ background: url("ossweb-img/jp.png") center center no-repeat; background-size:85%;}
+        .jp-2.on{ background: url("ossweb-img/jp.png") center center no-repeat; background-size:85%;}
+        .jp-an{position: absolute; width:2.2rem; left:.33rem; top:3.3rem; z-index: 999999;}
+        .jp-an2{position: absolute; width:1rem; right:0; top:3.2rem; z-index: 9999999;}
+        .donghua0{animation:anima0 2s ease-out forwards;}
+        @-webkit-keyframes anima0{
+            0%{-webkit-transform:translate(0);}
+            100%{-webkit-transform:translate(1.8rem)}
+        }
+        .donghua1{animation:anima1 2s ease-out forwards;}
+        @-webkit-keyframes anima1{
+            0%{-webkit-transform:translate(0);}
+            100%{-webkit-transform:translate(-.8rem)}
+        }
+        .donghua2{animation:anima2 2s ease-out forwards;}
+        @-webkit-keyframes anima2{
+            0%{-webkit-transform:translate(0);}
+            100%{-webkit-transform:translate(-.9rem)}
+        }
+        .hdgz2{ width:2.7rem; height:.88rem; position:absolute; left:50%; bottom:.1rem; margin-left: -1.35rem; background: rgba(0,0,0,.65); color: #FFF; font-size:.12rem; text-align: left;}
+        .hdgz{ width:2.7rem; height:1rem; position:absolute; left:50%; bottom:.1rem; margin-left: -1.35rem; background: rgba(0,0,0,.65); color: #FFF; font-size:.12rem; text-align: left;}
+        .hdgz-1{ padding-top:.04rem; padding-left:.1rem; color: #ec9d00;}
+        .hdgz-2{ padding-top:.04rem; padding-left:.1rem;}
+        .title{width:2.06rem; height:1.05rem; font-weight: bold; position:absolute; left:50%; bottom:2.2rem; margin-left: -1.03rem; background: rgba(0,0,0,.65); color: #FFF; font-size:.15rem; line-height:.25rem;}
+        .title-0{font-size:.16rem; color: #FFF; padding-top:.02rem;}
+        .title-1{color:#ec9d00; font-size:.15rem; }
+        .ewm{position: absolute; left:.58rem; bottom:.18rem; width:.78rem;}
+        .bottom1{position: absolute; left:1.5rem; bottom:.58rem; width:1.1rem;}
+        .bottom2{position: absolute; left:1.5rem; bottom:.13rem; width:1.1rem;}
+        .ewm-2{position: absolute; left:.58rem; top:.15rem; width:.78rem;}
+        .bottom1-1{position: absolute; left:1.5rem; top:.05rem; width:1.1rem;}
+        .bottom2-2{position: absolute; left:1.5rem; top:.55rem; width:1.1rem;}
+        .jdt-wai{position: absolute; width:2.56rem; height:.12rem; left:.31rem; bottom: 1.15rem; overflow: hidden; background: url("ossweb-img/jt.png") 0 0 no-repeat; background-size: 100% 100%;}
+        .jdt{width:10%; float: left; height:.12rem; -moz-border-radius:7em; -webkit-border-radius:7em; border-radius:7em; background: -webkit-linear-gradient(#fbb77a, #fe5b21);}
+        /*弹窗*/
+        .tc{ width:2.5rem; display: none; height:1.5rem; position:fixed; left: 50%; margin-left:-1.25rem; top:2.15rem; background-color: black; z-index: 9999; color: #FFF; background: url("ossweb-img/tc1.png") 0 0 no-repeat; background-size: 100%;}
+        .tc-close{ width:.5rem; height:.5rem; position:fixed; left: 50%; margin-left:1rem; top:1.95rem;  z-index: 99999; color: #FFF; font-size:.25rem;}
+        .tc-an{ position: absolute; top:.75rem; left:.4rem; width:1rem;}
+        .tc-an img{ width: 100%;}
+        /*弹窗2*/
+        .tc2{ width:2.5rem; display: none; height:1.5rem; position:fixed; left: 50%; margin-left:-1.25rem; top:2.15rem; background-color: black; z-index: 9999; color: #FFF; text-align: center;}
+        .bg-tc{ width: 100%; height:100%; position: absolute; background-color: black; opacity: .6; left: 0; top: 0; z-index: 999; display: none;}
+        .zhezhao{position: absolute; width:100%; height:1.5rem; z-index: 999999; top:1.7rem; left: 0;}
+        .tree-ye.hide{ display: none;}
+    </style>
+</head>
+<body>
+<div class="head">
+    <div class="logo"><img src="ossweb-img/logo.png"></div>
+    <div class="tmemo">
+        <b>猎鱼达人</b>
+        腾讯2017社交捕鱼新作
+    </div>
+    <a class="btoom" href="">
+        <img src="ossweb-img/btn-download.png">
+    </a>
+</div>
+<!--弹窗一-->
+<div class="tc">
+    <div class="tc-close">×</div>
+    <a class="tc-an" href=""><img src="ossweb-img/tc1-an.png"> </a>
+</div>
+<!--弹窗二-->
+<div class="tc2">
+    <div class="tc-close">×</div>
+    重来
+</div>
+<div class="bg-tc"></div>
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <!------------------------------------------------------->
+        <div class="swiper-slide">
+            <div class="title">
+                <div class="title-0">据说猎鱼领域</div>
+                <div class="title-1">4月1日 有大事发生!</div>
+                <div class="title-1"><b>立即</b>下载游戏</div>
+                <div class="title-2">到猎鱼达人中寻找答案吧！</div>
+            </div>
+            <div class="ewm"><img src="ossweb-img/ewm1.jpg"></div>
+            <a class="bottom1" href=""><img src="ossweb-img/bottom1.png"></a>
+            <a class="bottom2" href=""><img src="ossweb-img/bottom2.png"></a>
+            <img src="ossweb-img/P1-01.jpg">
+        </div>
+        <!------------------------------------------------------->
+        <div class="swiper-slide">
+            <div class="ewm-2"><img src="ossweb-img/ewm1.jpg"></div>
+            <a class="bottom1-1" href=""><img src="ossweb-img/bottom1.png"></a>
+            <a class="bottom2-2" href=""><img src="ossweb-img/bottom2.png"></a>
+            <div class="zhezhao"></div>
+            <ul class="jp">
+                <li class="jp-0"><div class="zhe"><img src="ossweb-img/zhezhao.png"></div></li>
+                <li class="jp-1"><div class="zhe"><img src="ossweb-img/zhezhao.png"></div></li>
+                <li class="jp-2"><div class="zhe"><img src="ossweb-img/zhezhao.png"></div></li>
+            </ul>
+            <div class="jp-bg"></div>
+            <div class="jp-an"><img src="ossweb-img/jp-an.png"></div>
+            <div class="jp-an2"><img src="ossweb-img/shayu.png"></div>
+            <div class="hdgz2">
+                <div class="hdgz-1">活动规则</div>
+                <div class="hdgz-2">1、活动时间X月XX-X月XX。</div>
+                <div class="hdgz-2">2、活动期间内完成游戏即可领奖。</div>
+                <div class="hdgz-2">3、每个账号只能领取一次奖励。</div>
+                <div class="hdgz-2">4、活动最终解释权归猎鱼达人运营团队所有。</div>
+            </div>
+            <img src="ossweb-img/P2-02.jpg">
+        </div>
+        <!------------------------------------------------------->
+        <div class="swiper-slide tree-ye">
+            <div class="ewm-2"><img src="ossweb-img/ewm1.jpg"></div>
+            <a class="bottom1-1" href=""><img src="ossweb-img/bottom1.png"></a>
+            <a class="bottom2-2" href=""><img src="ossweb-img/bottom2.png"></a>
+            <div class="jdt-wai">
+                <div class="jdt"></div>
+            </div>
+            <div class="hdgz">
+                <div class="hdgz-1">活动规则</div>
+                <div class="hdgz-2">1、活动期间，玩家捕猎到第100W只、500W只、1000W只鲨鱼将额外获得鲨鱼公仔</div>
+                <div class="hdgz-2">2、鲨鱼数据将于次日凌晨12点更新。</div>
+                <div class="hdgz-2">3、活动时间X月XX-X月XX。</div>
+                <div class="hdgz-2">4、活动最终解释权归猎鱼达人运营团队所有。</div>
+            </div>
+            <img src="ossweb-img/P3.jpg">
+        </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        direction: 'vertical'
+    });
+    /*脚本*/
+</script>
+<script>
+    $(".jp-an").bind("click",function(){
+        $(".zhezhao").show();
+        $(".zhe").show();
+        /**/
+        var randomNum = Math.random()*3;
+        var li = parseInt(randomNum,10);
+        $(".jp-"+li).addClass("on").removeClass("over").siblings().removeClass("on").addClass("over");
+        /**/
+        $(".jp li:nth-child(1)").animate({left:"2.1rem"},1000,function(){
+            $(this).css("left",".3rem");
+            $(".zhezhao").hide();
+        });
+        $(".jp li:nth-child(2)").animate({left:"1.2rem"},1000,function(){
+            $(this).css("left","1.2rem")
+        });
+        $(".jp li:nth-child(3)").animate({left:".27rem"},1000,function(){
+            $(this).css("left","2.1rem");
+        });
+        /**/
+        $(document).on("click",".on",function(){
+            $(".tc").show();
+            $(".bg-tc").show();
+            $(".zhezhao").show();
+            $(this).find(".zhe").hide();
+        });
+        $(document).on("click",".over",function(){
+            $(".tc2").show();
+            $(".bg-tc").show();
+            $(".zhezhao").show();
+            $(this).find(".zhe").hide();
+            return false;
+        });
+        $(".tc-close").bind("click",function(){
+            $(".tc,.tc2").hide();
+            $(".bg-tc").hide();
+        });
+    });
+    /*设定日期执行动作*/
+    var date=new Date();
+    var y=date.getMonth()+1;
+    var t=date.getDate();
+    if(y == 4&& t ==1){
+        $(".tree-ye").addClass("hide")
+    }
+    /*微信判定*/
+    function isWeiXin() {
+        var ua = window.navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    if(isWeiXin()){
+        $(".ewm-2 img").attr("src","ossweb-img/ewm2.jpg");
+        $(".ewm img").attr("src","ossweb-img/ewm2.jpg")
+     }else{
+        $(".ewm-2 img").attr("src","ossweb-img/ewm1.jpg");
+        $(".ewm img").attr("src","ossweb-img/ewm1.jpg")
+     }
+</script>
+</body>
+</html>

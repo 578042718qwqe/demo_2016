@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="gbk">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-TGideas">
+    <meta name="Copyright" content="Tencent">
+    <script>
+        function adaptVP(a){function c(){var c,d;return b.uWidth=a.uWidth?a.uWidth:640,b.dWidth=a.dWidth?a.dWidth:window.screen.width||window.screen.availWidth,b.ratio=window.devicePixelRatio?window.devicePixelRatio:1,b.userAgent=navigator.userAgent,b.bConsole=a.bConsole?a.bConsole:!1,a.mode?(b.mode=a.mode,void 0):(c=b.userAgent.match(/Android/i),c&&(b.mode="android-2.2",d=b.userAgent.match(/Android\s(\d+.\d+)/i),d&&(d=parseFloat(d[1])),2.2==d||2.3==d?b.mode="android-2.2":4.4>d?b.mode="android-dpi":d>=4.4&&(b.mode=b.dWidth>b.uWidth?"android-dpi":"android-scale")),void 0)}function d(){var e,f,g,h,c="",d=!1;switch(b.mode){case"apple":f=(window.screen.availWidth*b.ratio/b.uWidth)/b.ratio;c="width="+b.uWidth+",initial-scale="+f+",minimum-scale="+f+",maximum-scale="+f+",user-scalable=no";break;case"android-2.2":a.dWidth||(b.dWidth=2==b.ratio?720:1.5==b.ratio?480:1==b.ratio?320:.75==b.ratio?240:480),e=window.screen.width||window.screen.availWidth,320==e?b.dWidth=b.ratio*e:640>e&&(b.dWidth=e),b.mode="android-dpi",d=!0;case"android-dpi":f=160*b.uWidth/b.dWidth*b.ratio,c="target-densitydpi="+f+", width="+b.uWidth+", user-scalable=no",d&&(b.mode="android-2.2");break;case"android-scale":c="width="+b.uWidth+", user-scalable=no"}g=document.querySelector("meta[name='viewport']")||document.createElement("meta"),g.name="viewport",g.content=c,h=document.getElementsByTagName("head"),h.length>0&&h[0].appendChild(g)}function e(){var a="";for(key in b)a+=key+": "+b[key]+"; ";alert(a)}if(a){var b={uWidth:0,dWidth:0,ratio:1,mode:"apple",userAgent:null,bConsole:!1};c(),d(),b.bConsole&&e()}};adaptVP({uWidth:640});
+    </script>
+    <meta name="keywords" content=""/>
+    <meta name="Description" content=""/>
+    <title>官方网站-腾讯游戏</title>
+    <style>
+        .clearfix:after {content:"."; display:block; height:0; clear:both; visibility:hidden}
+        ul{list-style-type:none;}
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,a{margin:0;padding:0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+        article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block; }
+        table{border-collapse:collapse;border-spacing:0}
+        audio,canvas,video{display: inline-block;}
+        fieldset,img{border:0}
+        address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+        ol,ul{list-style:none}
+        h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+        q:before,q:after{content:''}
+        abbr,acronym{border:0;font-variant:normal}
+        sup{vertical-align:text-top}
+        sub{vertical-align:text-bottom}
+        input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+        img{border:0; vertical-align:top;}
+        a { -webkit-tap-highlight-color:rgba(0,0,0,0); text-decoration:none;}
+
+        body{font-size:24px;font-family:"Microsoft yahei"; }
+        .wrapper{width: 640px; min-height:100%; margin:0 auto; overflow:hidden; }
+        .wrapper section {width:640px; position:relative;}
+        .page1{height:737px; background:url("ossweb-img/bg-1.jpg") 0 0 no-repeat;}
+        .page2{height:744px; background:url("ossweb-img/bg-2.jpg") 0 0 no-repeat;}
+        .head{height:110px; background-color:#2d0c0c;}
+        .logo{float: left; width:56%; height:103px;}
+        .logo-1{ width:91px; position: absolute; top:8px; left: 15px;}
+        .logo-1 img{ width: 100%;}
+        .logo-w1{position: absolute; font-size:36px; top:9px; left:125px; color: #feeada;}
+        .logo-w2{position: absolute; font-size:20px; top:62px; left:125px;  color: #feeada;}
+        .logo-botom{position: absolute; font-size:20px; top:17px; right: 20px;  color: #feeada;}
+        .logo-botom img{ width: 100%;}
+        /**/
+        .page2-xq1 span{ color: #fba763; font-size: 28px;}
+        .page2-xq5 span{ color: #fba763; width: 165px; height: 60px; line-height: 55px; font-size: 28px; float: left;}
+        .page2-xq6 span{ color: #fba763; width: 165px; height: 60px; line-height: 55px; font-size: 28px; float: left;}
+        .page2-xq6 span:nth-child(3){ margin-left:10px;}
+        .page2-xq7 img{ width: 100%;}
+        .page2-xq1{ position: absolute; width: 90%; height: 60px; top:16px; left:74px;}
+        .page2-xq2{ position: absolute; width: 90%; height: 60px; top:95px;  left:200px;}
+        .page2-xq3{ position: absolute; width: 90%; height: 60px; top:173px; left:200px;}
+        .page2-xq4{ position: absolute; width: 90%; height: 60px; top:250px; left:200px;}
+        .page2-xq5{ position: absolute; width: 90%; height: 60px; top:345px; left:36px;}
+        .page2-xq6{ position: absolute; width: 90%; height: 60px; top:436px; left:38px;}
+        .page2-xq7{ position: absolute; width: 40%; height: 60px; top:550px; left:50%; margin-left: -20%;}
+        .page2-xq1 select{ border:1px solid #fba763; width: 67%; height:60px; background: url("ossweb-img/input_bg.png") 0 0 repeat-x; color: #fba763; font-size: 28px; text-indent: 1em;}
+        .page2-xq2 select{ border:1px solid #fba763; width: 67%; height:60px; background: url("ossweb-img/input_bg.png") 0 0 repeat-x; color: #fba763; font-size: 28px; text-indent: 1em;}
+        .page2-xq3 select{ border:1px solid #fba763; width: 67%; height:60px; background: url("ossweb-img/input_bg.png") 0 0 repeat-x; color: #fba763; font-size: 28px; text-indent: 1em;}
+        .page2-xq4 select{ border:1px solid #fba763; width: 67%; height:60px; background: url("ossweb-img/input_bg.png") 0 0 repeat-x; color: #fba763; font-size: 28px; text-indent: 1em;}
+        .page2-xq5 input{ border:1px solid #fba763; width: 67%; height:60px; background: url("ossweb-img/input_bg.png") 0 0 repeat-x; color: #fba763; font-size: 28px; text-indent: .5em;}
+        .page2-xq6 input{ border:1px solid #fba763; width: 35%; height:60px; background: url("ossweb-img/input_bg.png") 0 0 repeat-x; color: #fba763; font-size: 28px; text-indent: .5em; float: left;}
+    </style>
+</head>
+<body>
+<!--onclick="pgvSendClick({hottag:'a20161229cqsjm.index.btn.open'});"--><!--统计点击备用-->
+<div class="wrapper">
+    <section class="head">
+        <a href="http://cqsj.qq.com/m/" class="logo" onclick="pgvSendClick({hottag:'a20161229cqsjm.index.logo.open1'});">
+            <div class="logo-1"><img src="ossweb-img/logo.png"></div>
+            <div class="logo-w1">传奇世界手游</div>
+            <div class="logo-w2">经典传奇 崭新世界</div>
+        </a>
+        <a class="logo-botom" href="http://dlied5.myapp.com/myapp/1105148805/cqsj/2017_com.tencent.cqsj_h100_0.18.2.20.apk" onclick="pgvSendClick({hottag:'a20161229cqsjm.index.botom.open1'});"><img src="ossweb-img/botom.png"></a>
+    </section>
+    <section class="page1"></section>
+    <section class="page2">
+        <div class="page2-xq1">
+            <span>选择大区:</span>
+            <select  name="" onclick="pgvSendClick({hottag:'a20161229cqsjm.index.select.open1'});">
+                <option value="1" selected="selected">选择渠道</option>
+                <option value="2">手Q</option>
+                <option value="3">微信</option>
+            </select>
+        </div>
+        <div class="page2-xq2">
+            <select  name="" onclick="pgvSendClick({hottag:'a20161229cqsjm.index.select.open2'});">
+                <option value="1" selected="selected">选择系统</option>
+                <option value="2">IOS</option>
+                <option value="3">安卓</option>
+            </select>
+        </div>
+        <div class="page2-xq3">
+            <select  name="" onclick="pgvSendClick({hottag:'a20161229cqsjm.index.select.open3'});">
+                <option value="1" selected="selected">选择大区</option>
+                <option value="2">大区1</option>
+                <option value="3">大区1</option>
+                <option value="4">大区1</option>
+                <option value="4">大区5</option>
+                <option value="4">大区5</option>
+                <option value="4">大区5</option>
+                <option value="4">大区5</option>
+                <option value="4">大区5</option>
+                <option value="4">大区5</option>
+                <option value="4">大区5</option>
+                <option value="4">大区5</option>
+                <option value="4">大区5</option>
+            </select>
+        </div>
+        <div class="page2-xq4">
+            <select  name="" onclick="pgvSendClick({hottag:'a20161229cqsjm.index.select.open4'});">
+                <option value="1" selected="selected">选择角色</option>
+                <option value="2">角色1</option>
+                <option value="3">角色2</option>
+                <option value="3">角色3</option>
+            </select>
+        </div>
+        <div class="page2-xq5">
+            <span>输入CDKey:</span>
+            <input type="text" onclick="pgvSendClick({hottag:'a20161229cqsjm.index.select.open5'});">
+        </div>
+        <div class="page2-xq6">
+            <span>输入验证码:</span>
+            <input type="text" onclick="pgvSendClick({hottag:'a20161229cqsjm.index.select.open6'});">
+            <span><img src="ossweb-img/yzm.png"> </span>
+        </div>
+        <a class="page2-xq7" href="" onclick="pgvSendClick({hottag:'a20161229cqsjm.index.anniu.open1'});">
+            <img src="ossweb-img/anniu.png">
+        </a>
+    </section>
+</div>
+<!--js 统计代码-->
+<script src="http://pingjs.qq.com/ping_tcss_ied.js"></script>
+<script type="text/javascript">
+    if(typeof(pgvMain) == 'function');pgvMain();
+    if(navigator.appVersion.indexOf('Android') != -1){
+        document.addEventListener("DOMContentLoaded",function(e){
+            document.getElementById('wrap').style.zoom = e.target.activeElement.clientWidth/320;
+        });
+    };
+</script>
+</body>
+</html>

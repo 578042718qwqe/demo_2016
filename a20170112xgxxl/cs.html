@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="static/js/zepto.min.js"></script>
+    <script src="http://ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+    <style>
+        @charset "gbk";
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+        table{border-collapse:collapse;border-spacing:0;}
+        address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal;}
+        ol,ul{list-style:none;}
+        h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+        q:before,q:after{content:'';}
+        fieldset,img,abbr,acronym{border:0;}
+        /* basic */
+        .c:before,.c:after {content:"";display:table}
+        .c:after {clear:both}
+        .c {zoom:1}
+        body {font:12px/1.5 '\5FAE\8F6F\96C5\9ED1';padding-top:42px;background-color: #fafafa;}
+        a {text-decoration:none;overflow:hidden;}
+        a:hover{text-decoration:none;}
+        /*导航*/
+        .lunpan-2{ width:325px; height:385px; position: absolute; top:290px; right:48px; overflow: hidden;}
+        #oDiv{ color: #FFF; width: 100%; float: left; -webkit-animation:animations 2s ease-in-out infinite normal;}
+        #oDiv ul{ width: 100%;}
+        #oDiv ul li{ width: 100%; float: left; height:38px; font-size: 18px; line-height:38px; color:#000; text-align: center;}
+
+        @-webkit-keyframes animations{
+            0%{ margin-top: 0; }
+            100%{ margin-top: -50px; }
+        }
+        @-moz-keyframes animations{
+            0%{ margin-top: 0; }
+            100%{ margin-top: -50px; }
+        }
+        @keyframes animations{
+            0%{ margin-top: 0; }
+            100%{ margin-top: -50px; }
+        }
+    </style>
+</head>
+<body>
+<div class="lunpan-2">
+    <div id="oDiv">
+        <ul id="oUl">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+<script>
+    var arr = ["恭喜 1获得了188元的鲜萌兔叽公仔一只", "恭喜 2获得了188元的鲜萌兔叽公仔一只", "恭喜 3获得了188元的鲜萌兔叽公仔一只", "恭喜 4获得了188元的鲜萌兔叽公仔一只", "恭喜 5获得了188元的鲜萌兔叽公仔一只","恭喜 6获得了188元的鲜萌兔叽公仔一只","恭喜 6获得了188元的鲜萌兔叽公仔一只","恭喜 8获得了188元的鲜萌兔叽公仔一只","恭喜 9获得了188元的鲜萌兔叽公仔一只","恭喜 10获得了188元的鲜萌兔叽公仔一只"];
+
+    function you(input) {
+        for (var i = input.length - 1; i >= 0; i--) {
+            var randomIndex = Math.floor(Math.random() * (i + 1));
+            var itemAtIndex = input[randomIndex];
+            input[randomIndex] = input[i];
+            input[i] = itemAtIndex;
+        }
+        return input;
+    }
+    you(arr);
+    for(var i =0; i<arr.length; i++){
+        $("#oDiv ul li").eq(i).text(you(arr[i]));
+    }
+    /*/!*文字滚动*!/
+    var _html =$("#oDiv").html();
+    $("#oDiv").append(_html);
+    function gunlun() {
+        var gd = ($("#oDiv").height())/2;
+        $("#oDiv").animate({marginTop:- gd},3000,function () {
+            if($("#oDiv").css("margin-top",gd)){
+                $("#oDiv").css("margin-top","0")
+            }
+        });
+    }
+    setInterval(gunlun,0);*/
+   /* // 随机获取3个数据
+    var arr = new Array(100);
+    for(i=0; i<100; i++){
+        arr[i]=i;
+    }
+    function you(input) {//============随机==============//
+        for (var i = input.length - 1; i >= 0; i--) {
+            var randomIndex = Math.floor(Math.random() * (i + 1));
+            var itemAtIndex = input[randomIndex];
+            input[randomIndex] = input[i];
+            input[i] = itemAtIndex;
+        }
+        return input;
+    }
+    console.log(you(arr));
+   /!* for(var i =0; i<arr.length; i++){
+        $("#oDiv ul li").eq(i).text(you(arr[i]));
+    }*!/
+    /!*文字滚动*!/
+    var _html =$("#oDiv").html();
+    $("#oDiv").append(_html);
+    function gunlun() {
+        var gd = ($("#oDiv").height())/2;
+        $("#oDiv").animate({marginTop:- gd},6000,function () {
+            if($("#oDiv").css("margin-top",gd)){
+                $("#oDiv").css("margin-top","0")
+            }
+        });
+    }
+    */
+</script>
+</body>
+</html>

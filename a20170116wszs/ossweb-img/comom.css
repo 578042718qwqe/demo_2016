@@ -1,0 +1,117 @@
+@charset "gb2312";
+/* 通用内容 */
+b,body,dd,dl,dt,form,h1,h2,h3,h4,header,i,img,input,ol,p,rb,rt,ruby,section,ul{margin:0;padding:0;font-style:normal}
+body,h1,h2,html{font-family:"微软雅黑",Helvetica,STHeiTi,sans-serif;font-weight:400;line-height:1}
+i{display:block;font-style:normal}
+li{list-style:none}
+a{text-decoration:none}
+img{border:0}
+section{font-size:.16rem;}
+.o_h{overflow:hidden}
+.clear{clear:both}
+/*头部样式*/
+.o_h{overflow:hidden;}
+.clear{clear:both;}
+.clear:after{content:" ";clear:both;line-height:0;height:0;}
+.first_chapter{position: relative;}
+.p_common{background:url(http://ossweb-img.qq.com/images/ttxd/web2015/mobile/spr.png) no-repeat 0 0;background-size:2.5rem auto;}
+.p_common2{width:23%;padding-top:23%;background:url(http://game.gtimg.cn/images/ttxd/m/web201605/bottom_icon.png) no-repeat 0 0;background-size:100% auto;}
+.first_chapter_btn{background-color:#191917;width:100%;height: .5rem;display:-webkit-box; position:absolute;bottom:0;}
+.first_chapter_btn li{-webkit-box-flex:1;text-align:center;}
+.first_chapter_btn li.first_chapter_btn_f{border-right:.01rem solid #737373}
+.first_chapter_btn li a{font-size:.14rem;color:#ffffff;display:inline-block;position:relative;padding:.12rem 0 0 .13rem;text-align:left;}
+.first_chapter_btn li p{font-size:.07rem;}
+
+.link-icon{display:inline-block;height:.23rem;background:url(http://ossweb-img.qq.com/images/ttxd/web2015/mobile/spr.png) no-repeat 0 0;position:absolute;left:-.1rem;top:.13rem;}
+.link-icon1{width:.18rem;background-position:0 -483px;}
+.link-icon2{width:23px;background-position:0 -510px;left:-12px;}
+.link-strategy{background-position: 0 -240px;}
+.link-bbs{background-position: 0 -320px;}
+.common_header{width:100%;height:64px;position:relative;left:0;top:0;color:#fff;z-index:97;}
+.index{padding-top:60px !important;}
+.index .common_header{position:absolute;}
+.cover20,.cover50,.cover90{width:100%;height:100%;position:absolute;left:0;top:0;background:#000;z-index:98;}
+.cover20{opacity:.2;}.cover50{opacity:.5;}.cover90{opacity:.9;}
+.cover_content{width:100%;height:100%;position:absolute;left:0;top:0;z-index:99;background:#1e1e1e;}
+.common_header ruby{width:92px;height:45px;padding:16px 0 0 60px; background: url(ico.png) 10px 8px no-repeat;background-size: 45px 45px;float:left;}
+.common_header .web_logo{width:150px;height:100%;color:#fff;display:block;overflow:hidden;float:left;}
+.common_header rb{font-size:.08rem;color:#939393;}
+.btn_download{height:.4rem;display:block;color:#fff;}
+.common_header .btn_download{width:1rem;float:right; margin:.2rem .4rem 0 0;border-radius:0;background:url(http://game.gtimg.cn/images/ttxd/m/web201605/down_icon.png) no-repeat;background-size: 100% auto;}
+
+.common_footer{background:#222222;padding-bottom:0px;text-align:center;color:#666;font-size:.7rem;line-height:.1rem;clear:both;}
+.img_wx{width:.65rem;height: .65rem;margin: .37rem auto 0;background-position: .01rem -.63rem;}
+.img_qq{width:.65rem;height:.65rem;margin: .37rem auto 0;background:url(http://game.gtimg.cn/images/ttxd/m/web201605/bottom_icon.png) no-repeat 0 0;background-size:100% auto;border-radius:50%;}
+.common_footer .t{font-size:16px;line-height:.1rem;color:#c2c2c2;margin:21px 0 27px;}
+.common_footer .t2{margin-bottom:50px;font-weight:700;color:#BC342B;}
+.common_footer .new_o{margin-bottom: 6px; line-height: .1rem; font-size: 12px;}
+.down_box{height:80px;background:#000; padding-top: 46px;}
+.common_footer .btn_download{width:90%;height:40px;line-height:40px;margin:0px auto;font-size:1.125rem;background:#D9371B;text-align:center;border-radius:5px;color:#fff;}
+.common_footer .r{font-size:.6rem;padding-top:0px;}
+
+.footer{background-color: #1B1B1B; padding-top: 20px; padding-bottom: 20px;}.footer p{ font-size: .12rem; line-height: .12rem;}
+/*top*/
+
+.to_top{display: block; position: relative; width: 100px; height: 50px; line-height: 50px; margin: 0 auto; text-align: center; font-size: 16px; color: #d1dae1;}
+.to_top:after{content:"";width:8px;height:8px;position:absolute;right:0;top:23px;border-left:1px solid #d1dae1;border-top:1px solid #d1dae1;-webkit-transform:rotate(45deg);margin:0 0 0 -4px;}
+.btn_nav_slide{width:40px;height:40px;overflow:hidden;position:absolute;right:4px;top:13px;z-index:10001;}
+.footer_r{height: 54px; width: 100%; background: #1A1A1A; margin-top: 35px;}
+.btn_nav_slide .cover50{display:none;}
+.index .cover50{display:block;}
+.draw,.draw:before,.draw:after{width:25px;height:2px;background:white;position:absolute;left:0;-webkit-transition:all .5s;-webkit-transform-style: preserve-3d;-webkit-backface-visibility: hidden;}
+.draw{top:18px;left:10px;}
+.draw:before{content:"";top:-7px;}
+.draw:after{content:"";top:7px;}
+.G_close .draw{background:transparent;}
+.G_close .draw:before{top:0;-webkit-transform:rotate(45deg);background:#BC3129;}
+.G_close .draw:after{top:0;-webkit-transform:rotate(-45deg);background:#BC3129;}
+.common_nav{width:0;height:0;position:fixed;right:0;top:60px;z-index:9999;opacity:0;-webkit-transition:all .5s;-webkit-transform-style: preserve-3d;-webkit-backface-visibility: hidden;}
+.common_nav ul{width:100%;overflow:hidden;text-align:center;}
+.common_nav li{height:40px;overflow:hidden;line-height:40px;position:relative;border-top:1px solid #2c2c2c;}
+.common_nav a{color:#fff;display:block;height:100%; font-size: .15rem;}
+.G_open{width:100%;height:100%;top:60px;opacity:1;-webkit-transform:scale3d(1,1,1);}
+.p_common{ font-size: .15rem;}
+.wauto{width: 100%;display:block;}
+.vam img{vertical-align: middle}
+.fl{float: left}
+.fr{float: right}
+.clearfix:after{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+.clearfix{
+    display:inline-block;
+}
+*html.clearfix{
+    height:1%
+}
+.clearfix{
+    display:block;
+}
+.pb1{
+    padding-bottom: 1rem;
+}
+.none{
+    display: none;
+}
+.common_footer{ font-size: .14rem;}.wxbox p,qqbox p{ line-height: .1rem;}
+/*  |xGv00|be1c9fd04876998ebd6307f64f6874ed */
+.mfoot {background: #070300;padding-bottom:.2rem;text-align: center;color: #666;font-size: .07rem;line-height: .15rem;padding-top:.15rem;}
+.sw3-title{ width: 3rem; position: absolute; top:2.83rem; left:.1rem;}
+.foot-top{ position: absolute; top:2.5rem; left:50%; width: .8rem; text-align: center; font-size: .17rem; color: #FFF; margin-left: -.4rem;}
+.foot-top a{ color: #50aef0;}
+.foot-top:after{ content: "";
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin-left:-.06rem;
+    margin-top: .25rem;
+    width: .1rem;
+    height: .1rem;
+    -webkit-transform: rotate(45deg);
+    border-left: 2px solid #50aef0;
+    border-top: 2px solid #50aef0;
+}

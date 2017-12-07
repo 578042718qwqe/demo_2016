@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="gb2312"/>
+<meta name="applicable-device" content="mobile">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+<meta name="viewport" content="width=320,minimum-scale=0,maximum-scale=5,user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta content="yes" name="mobile-web-app-capable">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta name="robots" content="all" />
+<meta name="author" content="Tencent-TGideas" />
+<meta name="Copyright" content="Tencent" />
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<link rel="stylesheet" href="ossweb-img/comom.css">
+<title>官网</title>
+<!-- 设计:cp | 重构:cp | 创建时间:17-01-16 -->
+<style>
+@media only screen and (max-width:1536px),only screen and (max-device-width:1536px){body,html{font-size:240px}}
+@media only screen and (max-width:1080px),only screen and (max-device-width:1080px){body,html{font-size:337.5px}}
+@media only screen and (max-width:960px),only screen and (max-device-width:960px){body,html{font-size:300px}}
+@media only screen and (max-width:800px),only screen and (max-device-width:800px){body,html{font-size:250px}}
+@media only screen and (max-width:720px),only screen and (max-device-width:720px){body,html{font-size:225px}}
+@media only screen and (max-width:640px),only screen and (max-device-width:640px){body,html{font-size:200px}}
+@media only screen and (max-width:600px),only screen and (max-device-width:600px){body,html{font-size:187.5px}}
+@media only screen and (max-width:540px),only screen and (max-device-width:540px){body,html{font-size:168.75px}}
+@media only screen and (max-width:480px),only screen and (max-device-width:480px){body,html{font-size:150px}}
+@media only screen and (max-width:414px),only screen and (max-device-width:414px){body,html{font-size:129.38px}}
+@media only screen and (max-width:400px),only screen and (max-device-width:400px){body,html{font-size:125px}}
+@media only screen and (max-width:375px),only screen and (max-device-width:375px){body,html{font-size:117.19px}}
+@media only screen and (max-width:360px),only screen and (max-device-width:360px){body,html{font-size:112.5px}}
+@media only screen and (max-width:320px),only screen and (max-device-width:320px){body,html{font-size:100px}}
+@media only screen and (max-width:240px),only screen and (max-device-width:240px){body,html{font-size:75px}}
+/*头部样式*/
+b,body,dd,dl,dt,form,h1,h2,h3,h4,header,i,img,input,ol,p,rb,rt,ruby,section,ul{margin:0;padding:0;font-style:normal}
+body,h1,h2,html{font-family:"微软雅黑",Helvetica,STHeiTi,sans-serif;font-weight:400;line-height:1; color:#f3e1bc;}
+body{background-color:#390704;}
+i{display:block;font-style:normal}
+li{list-style:none}
+a{text-decoration:none}
+img{border:0}
+section{font-size:.16rem;}
+/*背景*/
+.bg { width: 100%; height: auto; position: relative; overflow:hidden; font-size: .12rem;}
+.bg img { width: 100%; height: auto; display: block;}
+.bg-pic{ position:relative; overflow:hidden;}
+.bg-pic img{width: 100%;height: auto; border:0;}
+/*弹窗样式*/
+.dia{ width: 100%; height: 100%;}
+.dia-con{ width:270px; height: 230px; background: url("ossweb-img/tc.png") 0 0 no-repeat; background-size: 100%; position:fixed; top:150px; left: 50%; margin-left: -135px; font-size: .12rem;}
+.dia-close{ position:fixed; top:1.52rem; right:.27rem; color: #FFF; font-size:.2rem; background: url("ossweb-img/tc-close.png") 0 0 no-repeat; background-size: 100%; width:15px; height: 15px;}
+.dia-con-all{ position: relative; width: 100%;}
+.dia-con1{ position: absolute; font-size: 23px; font-weight:bold; top: 50px; left: 0; width: 100%; text-align: center;}
+.dia-con2{ position: absolute; font-size: 15px; font-weight:bold; top: 84px; left: 0; width: 100%; text-align: center;}
+.dia-con3{ position: absolute; font-size: 15px; font-weight:bold; top: 108px; left: 0; width: 100%; text-align: center;}
+/**/
+.dia2-con1{ position: absolute; font-size: 20px; top: 33px; left: 0; width: 100%; text-align: center;}
+.dia2-con2{ position: absolute; font-size: 12px; top: 65px; left: 0; width: 100%; text-align: center;}
+.dia2-con3{ position: absolute; font-size: 12px; top: 90px; left: 0; width: 100%; text-align: center;}
+.dia2-con3 input{ width: 60%; float: left; height:20px; line-height:20px; margin-left: 10px; color: #939393;}
+.dia2-con3 a{ width: 30%; float:right; margin-right: 10px;}
+.dia2-con3 a img{ width:100%;}
+.dia2-con4{ position: absolute; top:125px; left:50%; width:100px; margin-left: -50px;}
+.dia2-con4 img{ width: 100%;}
+/**/
+.dia3-con1{ position: absolute; font-size: 20px; top: 57px; left: 0; width: 100%; text-align: center;}
+.dia3-con2{ position: absolute; font-size: 20px; top: 87px; left: 0; width: 100%; text-align: center;}
+/**/
+.dia4-con1{ position: absolute; font-size: 20px; top: 57px; left: 0; width: 100%; text-align: center;}
+.dia4-con2{ position: absolute; font-size: 20px; top: 88px; left: 0; width: 100%; text-align: center;}
+/**/
+.dia5-con1{ position: absolute; font-size: 19px; top: 13px; left: 0; width: 100%; text-align: center;}
+.dia5-con2{ position: absolute; font-size: 14px; top: 50px; left: 0; width: 100%; text-align: center;}
+.dia5-con3{ position: absolute; font-size: 14px; top: 80px; left: 0; width: 100%; text-align: center;}
+.dia5-con4{ position: absolute; font-size: 14px; top: 110px; left: 0; width: 100%; text-align: center;}
+.dia5-con1 span,.dia5-con2 span,.dia5-con3 span,.dia5-con4 span,.dia5-con5 span{ float: left; width: 50%; text-align: right; height:18px; line-height:18px;}
+.dia5-con1 select,.dia5-con2 select,.dia5-con3 select,.dia5-con4 select,.dia5-con5 select{ float: left; width: 38%; text-align:left; margin-left: 5%; color: #999;}
+.dia5-con5{ position: absolute; font-size: 14px; top:138px; left:50%; width:98px; margin-left: -49px; text-align: center;}
+.dia5-con5 img{ width:100%;}
+/**/
+.dia6-con1{ position: absolute; font-size: 20px; top: 18px; left: 0; width: 100%; text-align: center;}
+.dia6-con2{ position: absolute; font-size: 20px; top: 62px; left:50%; width:150px; margin-left: -75px; text-align: center;}
+.dia6-con3{ position: absolute; font-size: 20px; top: 114px; left:50%; width:150px; margin-left: -75px; text-align: center;}
+.dia6-con2 img,.dia6-con3 img{ width: 100%;}
+/**/
+.dia7-con1{ position: absolute; top: 18px; left:15px; width:45px; text-align: center;}
+.dia7-con2{ position: absolute; top: 18px; left:68px; width:50px; text-align: center;}
+.dia7-con3{ position: absolute; top: 18px; left:135px; width:44px; text-align: center;}
+.dia7-con4{ position: absolute; top: 18px; left:198px; width:50px; text-align: center;}
+
+.dia7-con5{ position: absolute; top: 65px; left:13px; width:50px; text-align: center;}
+.dia7-con6{ position: absolute; top: 65px; left:68px; width:50px; text-align: center;}
+.dia7-con7{ position: absolute; top: 65px; left:135px; width:50px; text-align: center;}
+.dia7-con8{ position: absolute; top: 65px; left:198px; width:50px; text-align: center;}
+
+.dia7-con9{ position: absolute; top: 120px; left:68px; width:50px; text-align: center;}
+.dia7-con10{ position: absolute; top: 120px; left:135px; width:50px; text-align: center;}
+.dia7-con1 img,.dia7-con2 img,.dia7-con3 img,.dia7-con4 img,.dia7-con5 img,.dia7-con6 img,.dia7-con7 img,.dia7-con8 img,.dia7-con9 img,.dia7-con10 img{ width: 100%;}
+/*内容*/
+.wenan{ position: absolute; top: 10px; left:50%; width: 96%; line-height:20px; margin-left: -48%; font-size: .12rem;}
+.wenan span{ color: #d7a430;}
+.home{position: absolute; top:4px; left:114px; width:95px; }
+.jiangpin{ position: absolute; top: 4px; right: 0; width:40px;}
+.video{width:250px;height:180px;display: block; font-size:.12rem;}
+.denglu{ position: absolute; top:407px; right:-1px; width:120px; color: #f1dfba;}
+.choujiang{ position: absolute; top:330px; text-align: center; left: 50%; margin-left: -77px; width: 150px; color:#d7a430;}
+/*转盘*/
+.panel{height:300px;position:relative;overflow:hidden;}
+.panel .panel-face{background-image:url(ossweb-img/face.png); background-size:cover;width:98%;height:100%;position:absolute;left:0;}
+.panel .panel-btn{width:107px;height:118px;position:absolute;top:85px;left:98px;background-image:url(ossweb-img/btn.png);background-size:cover;}
+.panel.playing .panel-btn{-webkit-transform:scale(0.9);transform:scale(0.9);}
+.zhuanpan{ position: absolute; width: 96%; top:2%; left: 50%; margin-left: -47%;}
+.zhen{ background: url("ossweb-img/zhen.png")0 0 no-repeat; background-size: 100%; position: absolute; top:6px; left:152px; width:20px; height: 50px; z-index: 99;}
+/**/
+.text{
+	display: inline-block;
+	color: green;
+	font-family:"微软雅黑";
+	font-weight: bold;
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(255, 255, 255, 1)), to(rgba(255, 196, 101, 1)));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding: 5px 0;
+}
+.gray {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+
+	filter: grayscale(100%);
+
+	filter: gray;
+}
+</style>
+<script src="http://ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+</head>
+<body>
+<!--#include virtual="inc/meta.inc"--><!--头尾分离备用-->
+<!--onclick="pgvSendClick({hottag:'a20150825file.index.btn.open'});"--><!--统计点击备用-->
+<!--&copy;  特殊标点-->
+<!--头部样式-->
+<div id="btnNavSlide" class="btn_nav_slide" onclick="pgvSendClick({hottag:'a20161028rtzm.nav.banner.btn'})" href="/m/index.shtml"><i class="draw" title="导航开关"></i></div>
+<nav id="commonNav" class="common_nav o_h">
+	<div class="cover_content">
+		<ul>
+			<li><a onclick="pgvSendClick({hottag:'a20161028rtzm.nav.banner.link1'})" href="/m/index.shtml">首页</a></li>
+			<li><a onclick="pgvSendClick({hottag:'a20161028rtzm.nav.banner.link2'})" href="/webplat/info/news_version3/7367/12490/12491/m12826/list_1.shtml">新闻中心</a></li>
+			<li><a onclick="pgvSendClick({hottag:'a20161028rtzm.nav.banner.link3'})" href="/m/web2015/list_gameinfo.shtml">游戏资料</a></li>
+			<li><a onclick="pgvSendClick({hottag:'a20161028rtzm.nav.banner.link_game'})" href="http://ttxd.qq.com/cp/a20160315ttxd/index.htm">赛事专区</a></li>
+			<li><a onclick="pgvSendClick({hottag:'a20161028rtzm.nav.banner.link4'})" href="/m/web2015/list_workcenter.shtml">鉴赏中心</a></li>
+			<li><a onclick="pgvSendClick({hottag:'a20161028rtzm.nav.banner.link5'})" href="/webplat/info/news_version3/7367/12490/12503/m12826/list_1.shtml">游戏攻略</a></li>
+			<li><a onclick="pgvSendClick({hottag:'a20161028rtzm.nav.banner.link6'})" href="http://bbs.g.qq.com/forum.php?mod=forumdisplay&fid=12388">论坛</a></li>
+			<li><a onclick="pgvSendClick({hottag:'a20161028rtzm.nav.banner.link7'})" href="http://ttxd.qq.com/act/a20140312dh/m.htm">礼包兑换</a></li>
+			<li><a onclick="pgvSendClick({hottag:'a20161028rtzm.nav.banner.link8'})" href="http://ttxd.qq.com/cp/a20160913ttxdm/">版本回顾</a></li>
+		</ul>
+	</div>
+</nav>
+<header class="common_header">
+	<div class="cover_content clear">
+		<a href="http://ttxd.qq.com/m/" class="web_logo" onclick="pgvSendClick({hottag:'a20161028rtzm.nav.banner.logo'})"><ruby class="p_common"><rt><h1>天天炫斗</h1></rt><rb>第一实时PK动作手游</rb></ruby></a>
+		<a href="http://ttxd.qq.com/d.htm" class="btn_download p_common" target="_blank" onclick="pgvSendClick({hottag:'a20161028rtzm.nav.banner.download'})" title="立即下载"></a>
+	</div>
+</header>
+<script>
+
+	$("#btnNavSlide").bind("tap",function(){
+		if ($(".G_open").length) {
+			$("#commonNav").removeClass("G_open");
+			$("#btnNavSlide").removeClass("G_close");
+			$("body").unbind("touchmove", false);
+			pgvSendClick({
+				hottag: 'a20161028rtzm.nav.banner.close'
+			});
+		} else {
+			$("#commonNav").addClass("G_open");
+			$("#btnNavSlide").addClass("G_close");
+			$("body").bind("touchmove", false);
+			pgvSendClick({
+				hottag: 'a20161028rtzm.nav.banner.open'
+			});
+		}
+	});
+
+</script>
+<!--头部样式end-->
+	<div class="bg bg-pic sw-1">
+		<a class="home" href="http://ttxd.qq.com/m/index.shtml"><img src="ossweb-img/home.png"> </a>
+		<a class="jiangpin" onclick="showDia('dia7')"><img src="ossweb-img/jiangpin.png"> </a>
+		<a class="denglu" href="">尊敬的用户请 [ 登陆 ]</a>
+		<img src="ossweb-img/bg_01.jpg">
+	</div>
+	<div class="bg bg-pic sw-2">
+		<div class="zhen"></div>
+		<div class="choujiang">今日剩余3次抽奖机会</div>
+		<div class="zhuanpan">
+			<div id="ltpanel" class="panel"></div>
+		</div>
+		<img src="ossweb-img/bg_02.jpg">
+	</div>
+	<div class="bg bg-pic sw-3">
+		<div class="wenan">
+			<span>活动规则：</span><br>
+			1.活动时间：2017年1月25日-2017年2月3日；<br>
+			2.活动期间，每个用户每天登录账号后可在页面抽取3次奖品；<br>
+			3.抽中电影兑换券的玩家在填入手机号后将会电影票通兑码；用兑换码可在金逸影城全国直营门店影城前台直接兑换影票，如遇特殊影片需补足差价。兑换码有效期至2017年3月2日，情人节2月14日不可使用，春节期间正常使用。<br>
+			<span>具体使用细则：</span><br>
+			<span>(1)凭此兑换码可在金逸影城售票处兑换2D或3D电影入场券一张(不可兑换IMAX、VIP等特殊影厅电影票)。</span><br>
+			<span>(2)此兑换券不适用于情人节（2月14日）、首映式、明星见面会等特殊节假日。</span><br>
+			<span>(3)此兑换券不可作现金兑换，一经售出，概不退换。</span><br>
+			<span>(4)有效期内使用，过期无效。</span><br>
+			<span>(5)如有疑问可询问影城工作人员。</span><br>
+			4.游戏礼包将会在游戏内以邮件形式发放。<br>
+			5.此次活动最终解释权归腾讯公司所有。<br>
+		</div>
+		<img src="ossweb-img/bg_03.jpg">
+	</div>
+<!--尾部-->
+<div class="mfoot"><p>COPYRIGHT &copy; 1998 - 2016 TENCENT.</p> <p>ALL RIGHTS RESERVED.</p><p>腾讯公司 版权所有</p></div>
+<!--获得兑换码-->
+<div class="dia" id="dia" style="display:none">
+	<div class="dia-con">
+		<div class="dia-con-all">
+			<div class="dia-con1 text">恭喜你中奖了!</div>
+			<div class="dia-con2 text">此奖品会以邮件形式在游戏内发放。</div>
+			<div class="dia-con3 text">请注意查收。</div>
+		</div>
+	</div>
+	<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<!--中电影票-->
+<div class="dia" id="dia2" style="display:none">
+	<div class="dia-con">
+		<div class="dia-con-all">
+			<div class="dia2-con1 text">恭喜!</div>
+			<div class="dia2-con2 text">抽中金逸影院的10元小食券和35元电影兑换券!</div>
+			<div class="dia2-con3">
+				<input type="text" value="请输入您的手机号码">
+				<a href="" class="gray"><img src="ossweb-img/yzm.png"></a><!--去掉类 gray 颜色恢复正常-->
+			</div>
+			<a class="dia2-con4" href=""><img src="ossweb-img/an.png"></a>
+		</div>
+	</div>
+	<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<!--谢谢参与-->
+<div class="dia" id="dia3" style="display:none">
+	<div class="dia-con">
+		<div class="dia-con-all">
+			<div class="dia3-con1 text">新年快乐!</div>
+			<div class="dia3-con2 text">再试试你的好运气哦~</div>
+		</div>
+	</div>
+	<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<!--机会用完-->
+<div class="dia" id="dia4" style="display:none">
+	<div class="dia-con">
+		<div class="dia-con-all">
+			<div class="dia4-con1 text">你今日的抽奖机会已用完</div>
+			<div class="dia4-con2 text">请明天再来吧~</div>
+		</div>
+	</div>
+	<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<!--选区服-->
+<div class="dia" id="dia5" style="display:none">
+	<div class="dia-con">
+		<div class="dia-con-all">
+			<div class="dia5-con1 text">选择您想要领奖的区服信息</div>
+			<div class="dia5-con2"><span>请选择您的系统</span>
+				<select  name="" class="choose-system2">
+					<option value="1" selected="selected">IOS/安卓</option>
+					<option value="2">IOS/安卓</option>
+					<option value="3">IOS/安卓</option>
+					<option value="3">IOS/安卓</option>
+				</select>
+			</div>
+			<div class="dia5-con3"><span>请选择所在服务器</span>
+				<select  name="" class="choose-system2">
+					<option value="1" selected="selected">请选择服务器</option>
+					<option value="2">请选择服务器</option>
+					<option value="3">请选择服务器</option>
+					<option value="3">请选择服务器</option>
+				</select>
+			</div>
+			<div class="dia5-con4"><span>请选择您的角色名称</span>
+				<select  name="" class="choose-system2">
+					<option value="1" selected="selected">请选择角色</option>
+					<option value="2">请选择角色</option>
+					<option value="3">请选择角色</option>
+					<option value="3">请选择角色</option>
+				</select>
+			</div>
+			<a class="dia5-con5" href=""><img src="ossweb-img/an.png"></a>
+		</div>
+	</div>
+	<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<!--登录-->
+<div class="dia" id="dia6" style="display:none">
+	<div class="dia-con">
+		<div class="dia-con-all">
+			<div class="dia6-con1 text">尊敬的用户，请先登录哦</div>
+			<a class="dia6-con2" href=""><img src="ossweb-img/wx.png"></a>
+			<a class="dia6-con3" href=""><img src="ossweb-img/qq.png"></a>
+		</div>
+	</div>
+	<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<!--奖品-->
+<div class="dia" id="dia7" style="display:none">
+	<div class="dia-con">
+		<div class="dia-con-all">
+			<div class="dia7-con1"><img src="ossweb-img/icon5.png"></div>
+			<div class="dia7-con2"><img src="ossweb-img/icon2.png"></div>
+			<div class="dia7-con3"><img src="ossweb-img/icon3.png"></div>
+			<div class="dia7-con4"><img src="ossweb-img/icon4.png"></div>
+			<div class="dia7-con5"><img src="ossweb-img/icon5.png"></div>
+			<div class="dia7-con6"><img src="ossweb-img/icon5.png"></div>
+			<div class="dia7-con7"><img src="ossweb-img/icon5.png"></div>
+			<div class="dia7-con8"><img src="ossweb-img/icon5.png"></div>
+			<div class="dia7-con9"><img src="ossweb-img/icon1.png"></div>
+			<div class="dia7-con10"><img src="ossweb-img/icon1.png"></div>
+		</div>
+	</div>
+	<a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+</div>
+<!--js 弹窗-->
+<script src="http://ossweb-img.qq.com/images/js/comm/showDialog.min.js"></script>
+<script>
+	function showDia(e){
+		showDialog.show({
+			id:e,    //需要弹出的id，如果是弹出页面上的div，则该选项为必选
+			bgcolor:"#000",//弹出“遮罩”的颜色，格式为"#FF6600"，可选，默认为"#fff"
+			opacity:50     //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+		});
+	}
+</script>
+<!--js 统计代码-->
+<script src="http://pingjs.qq.com/ping_tcss_ied.js"></script>
+<script type="text/javascript">
+	if(typeof(pgvMain) == 'function');pgvMain();
+	if(navigator.appVersion.indexOf('Android') != -1){
+			document.addEventListener("DOMContentLoaded",function(e){
+				document.getElementById('wrap').style.zoom = e.target.activeElement.clientWidth/320;
+			});
+	};
+</script>
+<!--转盘-->
+<script src="//game.gtimg.cn/images/js/loteryround/ossweb-img/loteryround.min.js"></script>
+<script>
+	// 转盘初始化
+	// 第一个参数是奖品的个数
+	// 第二个是用来旋转的圆盘（指针不动）
+	var panel=new PanelLotery({
+		length:6,
+		el:'#ltpanel'
+	});
+
+	$('.panel-btn').on('click', function(event) {
+		event.preventDefault();
+		if(panel.playing) return;
+		// 演示用，随机转到奖品n
+		// 初始的指针右侧开始
+		// 顺时针方向开始算
+		// 第一个奖品是n=0
+		var n=Math.floor(Math.random()*6);
+		console.log(n);
+		panel.playto(n,function(){
+			alert(n);
+		});
+	});
+
+</script>
+</body>
+</html>

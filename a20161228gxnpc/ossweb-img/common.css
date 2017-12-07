@@ -1,0 +1,22 @@
+@charset "gbk";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal;}
+ol,ul{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+q:before,q:after{content:'';}
+fieldset,img,abbr,acronym{border:0;}
+/* basic */
+.c:before,.c:after {content:"";display:table}
+.c:after {clear:both}
+.c {zoom:1}
+body {font:12px/1.5 '\5FAE\8F6F\96C5\9ED1';padding-top:42px;background-color: #fafafa;}
+a {text-decoration:none;overflow:hidden;}
+a:hover{text-decoration:none;}
+/*µ¼º½*/
+
+/*footer*/
+#footer_ied{ background-color: black; height: 100px;}
+.wrap_ied{ height:65px; float: right; margin-top:25px;}
+.wrap_ied p{ color: #FFF;}
+.wrap_ied p a{ color: #FFF;}

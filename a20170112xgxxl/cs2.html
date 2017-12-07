@@ -1,0 +1,19 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+<body>
+<textarea name="text" id="text" cols="30" rows="10">asdasdas55</textarea>
+<button onclick="myCopy()">点击复制文本框内的内容</button><br>
+<script>
+    function myCopy(){
+        var ele = document.getElementById("text");
+        ele.select();
+        document.execCommand("Copy");
+    }
+</script>
+</body>
+</html>

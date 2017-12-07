@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="gb2312"/>
+<meta name="applicable-device" content="mobile">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+<meta name="viewport" content="width=320,minimum-scale=0,maximum-scale=5,user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta content="yes" name="mobile-web-app-capable">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta name="robots" content="all" />
+<meta name="author" content="Tencent-TGideas" />
+<meta name="Copyright" content="Tencent" />
+<meta name="Description" content="“欢乐麻将”是腾讯倾力打造的一款经典国粹棋牌手游。时尚简约的中国风画面，真人实时对战玩法，陪伴你欢乐每一天。"/>
+<meta name="Keywords" content="欢乐,麻将,QQ,棋牌,腾讯,游戏,网游,休闲"/>
+<link rel="stylesheet" href="css/swiper.min.css">
+<title>欢乐麻将官方网站-腾讯棋牌-腾讯游戏</title>
+<!-- 设计:cp | 重构:cp | 创建时间:17-03-01 -->
+<style>
+@media only screen and (max-width:1536px),only screen and (max-device-width:1536px){body,html{font-size:240px}}
+@media only screen and (max-width:1080px),only screen and (max-device-width:1080px){body,html{font-size:337.5px}}
+@media only screen and (max-width:960px),only screen and (max-device-width:960px){body,html{font-size:300px}}
+@media only screen and (max-width:800px),only screen and (max-device-width:800px){body,html{font-size:250px}}
+@media only screen and (max-width:720px),only screen and (max-device-width:720px){body,html{font-size:225px}}
+@media only screen and (max-width:640px),only screen and (max-device-width:640px){body,html{font-size:200px}}
+@media only screen and (max-width:600px),only screen and (max-device-width:600px){body,html{font-size:187.5px}}
+@media only screen and (max-width:540px),only screen and (max-device-width:540px){body,html{font-size:168.75px}}
+@media only screen and (max-width:480px),only screen and (max-device-width:480px){body,html{font-size:150px}}
+@media only screen and (max-width:414px),only screen and (max-device-width:414px){body,html{font-size:129.38px}}
+@media only screen and (max-width:400px),only screen and (max-device-width:400px){body,html{font-size:125px}}
+@media only screen and (max-width:375px),only screen and (max-device-width:375px){body,html{font-size:117.19px}}
+@media only screen and (max-width:360px),only screen and (max-device-width:360px){body,html{font-size:112.5px}}
+@media only screen and (max-width:320px),only screen and (max-device-width:320px){body,html{font-size:100px}}
+@media only screen and (max-width:240px),only screen and (max-device-width:240px){body,html{font-size:75px}}
+/*头部样式*/
+b,body,dd,dl,dt,form,h1,h2,h3,h4,header,i,img,input,ol,p,rb,rt,ruby,section,ul{margin:0;padding:0;font-style:normal}
+body,h1,h2,html{font-family:"微软雅黑",Helvetica,STHeiTi,sans-serif;font-weight:400;line-height:1}
+i{display:block;font-style:normal}
+li{list-style:none}
+a{text-decoration:none}
+img{border:0}
+section{font-size:.16rem;}
+/*背景*/
+.bg { width: 100%; height: auto; position: relative; overflow:hidden;}
+.bg img { width: 100%; height: auto; display: block;}
+.bg-pic{ position:relative; overflow:hidden;}
+.bg-pic img{width: 100%;height: auto; border:0;}
+/*导航样式*/
+.index .common_header{position:absolute;}
+.cover20,.cover50,.cover90{width:100%;height:100%;position:absolute;left:0;top:0;background:#000;z-index:98;}
+.cover20{opacity:.2;}.cover50{opacity:.5;}.cover90{opacity:.9;}
+.cover_content{width:100%;height:100%;position:absolute;left:0;top:0;z-index:99;background:#1e1e1e;font-family:"Helvetica Neue",Helvetica,STHeiTi,sans-serif;}
+.btn_download{height:90px;display:block;color:#fff;}
+.common_header .btn_download{width:88px; margin:8px 58px 0 10px; float:right; border-radius:0;background:#de8818;text-align:center;font-size:14px;height:32px;line-height:32px;border-radius:6px;font-family:"Microsoft Yahei";}
+.draw,.draw:before,.draw:after{width:50px;height:4px;background:#fff;position:absolute;left:0;-webkit-transition:all .5s;-webkit-transform-style: preserve-3d;-webkit-backface-visibility: hidden;}
+.draw{top:36px;left:20px;}
+.draw:before{content:"";top:-14px;}
+.draw:after{content:"";top:14px;}
+.G_close .draw{background:transparent;}
+.G_close .draw:before{top:0;-webkit-transform:rotate(45deg);background:#BC3129;}
+.G_close .draw:after{top:0;-webkit-transform:rotate(-45deg);background:#BC3129;}
+.common_nav{width:0;height:0;position:fixed;right:0;top:60px;z-index:9999;opacity:0;-webkit-transition:all .5s;-webkit-transform-style: preserve-3d;-webkit-backface-visibility: hidden;}
+.common_nav ul{width:100%;overflow:hidden;text-align:center;}
+.common_nav li{height:45px;overflow:hidden;line-height:45px;position:relative;border-top:1px solid #2c2c2c;}
+.common_nav a{color:#fff;display:block;height:100%;font-size:15px;font-family: "微软雅黑", Helvetica, STHeiTi, sans-serif;}
+.G_open{width:100%;height:100%;opacity:1;-webkit-transform:scale3d(1,1,1);}
+.footer{padding: 20px 0;background: #181716;}
+.footer p{text-align: center;color: #666;  }
+.common_header{width:100%;height:65px;position:relative;left:0;top:0;color:#fff;z-index:97;background:#000;font-family: "微软雅黑", Helvetica, STHeiTi, sans-serif;}
+.common_header rt{font-size:17px;color:#fff;}
+.common_header rb{font-size:10px;margin-top:5px;}
+.p_common{margin-top: -5px;margin-left: -5px;}
+.btn_nav_slide{width:80px;height:80px;overflow:hidden;position:absolute;right:8px;top:15px;z-index:999;}
+.draw,.draw:before,.draw:after{width:30px;height:3px;background:#fff;position:absolute;left:0;-webkit-transition:all .5s;-webkit-transform-style: preserve-3d;-webkit-backface-visibility: hidden;}
+.draw{top:36px;left:20px;}
+.draw:before{content:"";top:-10px;}
+.draw:after{content:"";top:10px;}
+.btn_nav_slide{width:50px;height:50px;overflow:hidden;position:absolute;right:15px;top:-5px;z-index:999;}
+/*logo*/
+.logo{ width:50px; margin-top:8px; margin-left: 10px;}
+.logo img{ width:100%; float: left; }
+.logo-l{ float: left; width: 100px; font-size: 12px;}
+.logo-l h1{ float: left; width:83px; padding-top:8px; padding-left: 10px; padding-bottom:2px; font-size: 18px; color: #FFF;}
+.logo-l rb{ float: left; width:87px; padding-left:10px; font-size:12px; color: #666;}
+/*FOOT*/
+.mfoot {background: #070300;padding-bottom: 20px;text-align: center;color: #666;font-size: 14px;line-height: 14px;padding-top:15px; clear: both;}
+.m-foot{ width:100%; height:295px; background-color: #000;  clear: both;}
+.m-foot .title{ width: 100%; text-align: center; font-size: 15px; line-height:45px; color: #666;}
+.m-foot .icon{ width:100%;}
+.m-foot .icon img{ width:100%; float: left;}
+.m-foot-icon{ width: 130px; margin: 0 auto;}
+.m-foot-icon img{ width: 100%;}
+a.m-foot-top{width:50%;margin:0 auto;display:block;height:72px;text-align:center;color:#FFF; line-height:89px; font-size: 12px;}
+a.m-foot-top:after{content:"";display:inline-block; position:absolute; left:50%; width:.1rem;height:.1rem;-webkit-transform: rotate(45deg);border-left: 2px solid #FFF;border-top: 2px solid #FFF;margin:22px 0 0 -8px;}
+/*swiper*/
+.sw-width{ width: 100%; position:absolute; top:22px; left: 0;}
+.swiper-button-next{ background-position:-43px 0; background-size: 80px 39px; }
+.swiper-button-prev{ background-position:8px 0; background-size: 80px 39px;}
+.swiper-pagination-bullet-active{ background-color: #FFF;}
+.swiper-pagination-bullet{ background-color: #e19350;}
+.swiper-container-horizontal>.swiper-pagination{ bottom: -28px; z-index: 999;}
+/*弹窗样式*/
+.dia{ width: 100%; height: 100%;}
+.dia-con{ width:250px; position:fixed; top:90px; left: 50%; margin-left: -125px; font-size: .12rem;}
+.dia-close{ position:fixed; top:65px; right:9px; color: #FFF; font-size:30px;}
+/*内容*/
+.video-open{width:43px;height:45px;display: block; font-size:.12rem; position: absolute; left:188px; top:145px;}
+.aniu-l{ position: absolute; left:3%; top:245px; width:46%;}
+.aniu-r{ position: absolute; right:3%; top:245px; width:46%;}
+/*尾部*/
+</style>
+<script src="js/swiper.min.js"></script>
+<script src="http://ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+</head>
+<body>
+<!--onclick="pgvSendClick({hottag:'a20170301klmjm.index.btn.open'});"--><!--统计点击备用-->
+	<header class="common_header">
+		<div class="cover_content clear">
+			<a href="/m/" class="web_logo" onclick="pgvSendClick({hottag:'a20170301klmjm.index.nav.logo'})">
+				<div class="logo"><img src="ossweb-img/logo.png"></div>
+				<div class="logo-l">
+					<h1>欢乐麻将</h1>
+					<rb>棋牌\益智\3D</rb>
+				</div>
+			</a>
+			<a class="btn_download p_common" onclick="pgvSendClick({hottag:'a20170301klmjm.index.xiazai.open'});" target="_blank" title="立即下载">立即下载</a>
+		</div>
+	</header>
+	<div id="btnNavSlide" class="btn_nav_slide"><i class="draw" title="导航开关"></i></div>
+	<nav id="commonNav" class="common_nav o_h">
+		<div class="cover_content">
+			<ul>
+				<li><a href="/m/" onclick="pgvSendClick({hottag:'a20170301klmjm.index.nav.link1'})">首页</a></li>
+				<li><a href="/webplat/info/news_version3/7207/25932/25933/25934/m16556/list_1.shtml" onclick="pgvSendClick({hottag:'a20170301klmjm.index.nav.link2'})">新闻</a></li>
+				<li><a href="/webplat/info/news_version3/7207/25932/25943/m16556/list_1.shtml" onclick="pgvSendClick({hottag:'a20170301klmjm.index.nav.link3'})">技巧</a></li>
+				<li><a href="/cp/a20161125tmtm/index.html" onclick="pgvSendClick({hottag:'a20170301klmjm.index.nav.link4'})">TMT</a></li>
+				<li><a href="/webplat/info/news_version3/7207/25932/25937/m16554/list_1.shtml" onclick="pgvSendClick({hottag:'a20170301klmjm.index.nav.link5'})">视频</a></li>
+				<li><a href="http://agame.qq.com/bbs_joy/forum.shtml?fid=12200&frompcbbs=1&mod=forumdisplay&c=forum&m=forum" onclick="pgvSendClick({hottag:'a20170301klmjm.index.nav.link6'})">论坛</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!--内容部分-->
+	<div class="bg bg-pic sw-1">
+		<a class="video-open" href="javascript:showDia('dia');" onclick="anniu('v0191r5ktav')"><img src="ossweb-img/video.png"> </a>
+		<a class="aniu-l" onclick="pgvSendClick({hottag:'a20170301klmjm.index.anniu.open1'})"><img src="ossweb-img/left.png"></a>
+		<a class="aniu-r" onclick="pgvSendClick({hottag:'a20170301klmjm.index.anniu.open2'})" href="http://majiang.qq.com/m/m201611/"><img src="ossweb-img/right.png"></a>
+		<img src="ossweb-img/bg_02.jpg">
+	</div>
+	<div class="bg bg-pic sw-1">
+		<img src="ossweb-img/bg_03.jpg">
+	</div>
+	<div class="bg bg-pic sw-1">
+		<img src="ossweb-img/bg_04.jpg">
+	</div>
+	<div class="bg bg-pic sw-1">
+		<img src="ossweb-img/bg_05.jpg">
+	</div>
+	<div class="bg bg-pic sw-1">
+		<img src="ossweb-img/bg_06.jpg">
+	</div>
+	<div class="bg bg-pic sw-1">
+		<img src="ossweb-img/bg_07.jpg">
+	</div>
+	<div class="bg bg-pic sw-1">
+		<img src="ossweb-img/bg_08.jpg">
+	</div>
+	<div class="bg bg-pic sw-1">
+		<img src="ossweb-img/bg_09.jpg">
+	</div>
+	<div class="bg bg-pic sw-2">
+		<div class="swiper-container sw-width"><!--sw-width 来控制它的宽度-->
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="ossweb-img/pic-1.png"> </div>
+				<div class="swiper-slide"><img src="ossweb-img/pic-2.png"> </div>
+				<div class="swiper-slide"><img src="ossweb-img/pic-3.png"> </div>
+				<div class="swiper-slide"><img src="ossweb-img/pic-4.png"> </div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+		<img src="ossweb-img/bg_10.jpg">
+	</div>
+	<!--------------------------foot------------------------------>
+	<div class="m-foot">
+		<a href="#" class="m-foot-top" onclick="pgvSendClick({hottag:'a20170301klmjm.index.top.open'});">返回顶部&nbsp;</a>
+		<div class="m-foot-icon">
+			<img src="ossweb-img/ewm.jpg">
+		</div>
+		<div class="title">微信公众号：欢乐麻将</div>
+		<div class="icon"><img src="ossweb-img/foot-icon.jpg"></div>
+	</div>
+	<div class="foot">
+		<script type="text/javascript" src="//ossweb-img.qq.com/images/js/mfoot.js"></script>
+	</div>
+<!--弹窗内容-->
+<div class="dia" id="dia" style="display:none">
+	<div class="dia-con">
+		<div id="mod_player" class="video"></div>
+	</div>
+	<a class="dia-close" href="javascript:showDialog.hide()" onclick="anniu('')" title="关闭">×</a>
+</div>
+<!--js 脚本-->
+<script>
+	var swiper = new Swiper('.sw-2 .swiper-container', {
+		pagination: '.sw-2 .swiper-pagination',
+		paginationClickable: '.sw-2 .swiper-pagination',
+		nextButton: '.sw-2 .swiper-button-next',
+		prevButton: '.sw-2 .swiper-button-prev',
+		spaceBetween: 30,
+		autoplay: 5000//可选选项，自动滑动
+	});
+</script>
+<!--js 弹窗-->
+<script src="http://ossweb-img.qq.com/images/js/comm/showDialog.min.js"></script>
+<script>
+	function showDia(e){
+		showDialog.show({
+			id:e,    //需要弹出的id，如果是弹出页面上的div，则该选项为必选
+			bgcolor:"#000",//弹出“遮罩”的颜色，格式为"#FF6600"，可选，默认为"#fff"
+			opacity:50     //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+		});
+		pgvSendClick({hottag:'a20170301klmjm.index.tc.open'});
+	}
+</script>
+<!--js 统计代码-->
+<script src="http://pingjs.qq.com/ping_tcss_ied.js"></script>
+<script type="text/javascript">
+	if(typeof(pgvMain) == 'function');pgvMain();
+	if(navigator.appVersion.indexOf('Android') != -1){
+			document.addEventListener("DOMContentLoaded",function(e){
+				document.getElementById('wrap').style.zoom = e.target.activeElement.clientWidth/320;
+			});
+	};
+</script>
+<!--视频-->
+<script src="http://imgcache.qq.com/tencentvideo_v1/tvp/js/tvp.player_v2.js"></script>
+<script>
+	function anniu(idv) {
+		var video = new tvp.VideoInfo();
+		video.setVid(idv);
+		var player = new tvp.Player();
+		player.create({
+			width: 250,
+			height: 180,
+			video: video,
+			modId: "mod_player",
+			pic: "ossweb-img/video-bf.png",        //视频封面地址
+			vodFlashSkin: "http://imgcache.qq.com/minivideo_v1/vd/res/skins/TencentPlayerMiniSkin.swf",  //精简皮肤
+			autoplay: true   //是否自动播放
+		});
+	}
+</script>
+<!--导航开关-->
+<script>
+	$("#btnNavSlide").bind("tap",function(){
+		if ($(".G_open").length) {
+			$("#commonNav").removeClass("G_open");
+			$("#btnNavSlide").removeClass("G_close");
+			$("body").unbind("touchmove", false);
+			pgvSendClick({
+				hottag: 'mobile.nav.banner.close'
+			});
+		} else {
+			$("#commonNav").addClass("G_open");
+			$("#btnNavSlide").addClass("G_close");
+			$("body").bind("touchmove", false);
+			pgvSendClick({
+				hottag: 'mobile.nav.banner.open'
+			});
+		}
+	});
+</script>
+<!--判断IOS & 安卓-->
+<script type="text/javascript">
+	var u = navigator.userAgent;
+	var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
+	var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+	$(".btn_download,.aniu-l").bind("click",function (e) {
+		if(isiOS == true){
+			window.location.href="https://itunes.apple.com/cn/app/huan-le-ma-jiang/id689180123?mt=8";
+		}
+		else if(isAndroid == true){
+			window.location.href="http://adrdir.qq.com/minigamefile/terminal/andriod/QQgame_HLMJ/gw/QQgame_hlmj.apk";
+		}
+		else {
+			window.location.href="http://majiang.qq.com/";
+		}
+	})
+</script>
+</body>
+</html>

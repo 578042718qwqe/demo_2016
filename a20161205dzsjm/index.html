@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="gb2312"/>
+<meta name="applicable-device" content="mobile">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+<meta name="viewport" content="width=320,minimum-scale=0,maximum-scale=5,user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta content="yes" name="mobile-web-app-capable">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta name="robots" content="all" />
+<meta name="author" content="Tencent-TGideas" />
+<meta name="Copyright" content="Tencent" />
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<link rel="stylesheet" href="ossweb-img/swiper.min.css">
+<link rel="stylesheet" href="ossweb-img/comom.css">
+<link rel="stylesheet" href="ossweb-img/styles.css"/>
+<title>官网</title>
+<!-- 设计:cp | 重构:cp | 创建时间:16-12-07 -->
+<style>
+@media only screen and (max-width:1536px),only screen and (max-device-width:1536px){body,html{font-size:240px}}
+@media only screen and (max-width:1080px),only screen and (max-device-width:1080px){body,html{font-size:337.5px}}
+@media only screen and (max-width:960px),only screen and (max-device-width:960px){body,html{font-size:300px}}
+@media only screen and (max-width:800px),only screen and (max-device-width:800px){body,html{font-size:250px}}
+@media only screen and (max-width:720px),only screen and (max-device-width:720px){body,html{font-size:225px}}
+@media only screen and (max-width:640px),only screen and (max-device-width:640px){body,html{font-size:200px}}
+@media only screen and (max-width:600px),only screen and (max-device-width:600px){body,html{font-size:187.5px}}
+@media only screen and (max-width:540px),only screen and (max-device-width:540px){body,html{font-size:168.75px}}
+@media only screen and (max-width:480px),only screen and (max-device-width:480px){body,html{font-size:150px}}
+@media only screen and (max-width:414px),only screen and (max-device-width:414px){body,html{font-size:129.38px}}
+@media only screen and (max-width:400px),only screen and (max-device-width:400px){body,html{font-size:125px}}
+@media only screen and (max-width:375px),only screen and (max-device-width:375px){body,html{font-size:117.19px}}
+@media only screen and (max-width:360px),only screen and (max-device-width:360px){body,html{font-size:112.5px}}
+@media only screen and (max-width:320px),only screen and (max-device-width:320px){body,html{font-size:100px}}
+@media only screen and (max-width:240px),only screen and (max-device-width:240px){body,html{font-size:75px}}
+/*头部样式*/
+b,body,dd,dl,dt,form,h1,h2,h3,h4,header,i,img,input,ol,p,rb,rt,ruby,section,ul{margin:0;padding:0;font-style:normal}
+body,h1,h2,html{font-family:"微软雅黑",Helvetica,STHeiTi,sans-serif;font-weight:400;line-height:1}
+i{display:block;font-style:normal}
+li{list-style:none}
+a{text-decoration:none}
+img{border:0}
+section{font-size:.16rem;}
+/*背景*/
+.all-body{ position: relative;}
+.bg { width: 100%; height: auto; position: relative; overflow:hidden;}
+.bg img { width: 100%; height: auto; display: block;}
+.bg-pic{ position:relative; overflow:hidden;}
+.bg-pic img{width: 100%;height: auto; border:0;}
+/*swiper*/
+.sw-width{ width: 100%; position:absolute; top:-15px; left: 0;}
+.swiper-button-next{ background-position:-44px 0; background-size:87px 70px; }
+.swiper-button-prev{ background-position:5px 0; background-size:87px 70px;}
+.swiper-pagination-bullet-active{ background-color: #FFF;}
+.swiper-pagination-bullet{ background-color: #FFF; width:72px; height:70px;}
+.swiper-container-horizontal>.swiper-pagination{ bottom:-10px; z-index: 999;}
+.swiper-container-horizontal>.swiper-pagination{ bottom:-10px; z-index: 999;}
+.swiper-pagination span:nth-child(1){ background: url("ossweb-img/icon1.png") 0 0 no-repeat; background-size: 100%;}
+.swiper-pagination span:nth-child(2){ background: url("ossweb-img/icon2.png") 0 0 no-repeat; background-size: 100%;}
+.swiper-pagination span:nth-child(3){ background: url("ossweb-img/icon3.png") 0 0 no-repeat; background-size: 100%;}
+.swiper-pagination span:nth-child(4){ background: url("ossweb-img/icon4.png") 0 0 no-repeat; background-size: 100%;}
+/*内容*/
+.video{width:250px;height:180px;display: block; font-size:.12rem;}
+.CG-video{ width: 300px; position: absolute; top:75px; left:50%; margin-left: -150px;}
+.CG-v1{ position: absolute; top:250px; left: 15px; width:80px;}
+.CG-v2{ position: absolute; top:250px; left: 115px; width:80px;}
+.CG-v3{ position: absolute; top:250px; left: 215px; width:92px;}
+.title-t{ position: absolute; top:290px; left:50%; width: 310px; margin-left: -150px;}
+.title-yuye{width:180px; position: absolute; left:50%; top:390px; margin-left:-90px;}
+.title-fj{ position: absolute; top:465px; right:-5px; width: 100px;  -webkit-animation: bug-5 ease-out 1.2s 0.2s infinite alternate forwards;}
+@-webkit-keyframes bug-5{
+	0%{ top: 465px; right:-5px; }
+	100%{top: 450px; right:5px;}
+}
+@-webkit-keyframes bug-5{
+	0%{top: 465px; right:-5px;}
+	100%{top: 450px; right:5px;}
+}
+/*弹窗样式*/
+.dia{ width: 100%; height: 100%;}
+.dia-con{ width:250px; position:fixed; top:50px; left: 50%; margin-left: -125px; font-size: .12rem;}
+.dia-close{ position:fixed; top:.3rem; right:.3rem; color: #FFF; font-size:.2rem;}
+/*尾部*/
+.video-wrap{width:100%;height:100%;position:fixed;top:0;left:0;z-index:999;background:rgba(0,0,0,0.5);display:none;}
+.video-player{width:100%;height:100%;position:relative;top:0;left:0;}
+.tenvideo_player{height:100%;}
+.video-close{width:40px;height:40px;background:#000;color:#0091de;position:absolute;text-align:center;display:block;border:1px solid #ddd;font-size:40px;line-height:40px;font-weight:normal;opacity:0.5;right:10px;top:10px;z-index:10;font-style: normal;}
+/*特效*/
+.scene{ width:100%;}
+#scene li{ width:450px; position: absolute; top:-17px !important; left:-8% !important;}
+#scene2 li:nth-child(1){ width:153px; position: absolute; top:-15px !important; left:160px !important;}
+#scene3 li{ width:153px; height:76px; position: absolute; top:-18px !important; left:154px !important;}
+.container{ position: absolute; top:88px; left:50%; margin-left: -150px; width: 100%;}
+.sqiang{width:310px; position: absolute; top:10px; right: 10px;}
+.sqiang ul li img{ width: 100%;}
+</style>
+<script src="ossweb-img/swiper.min.js"></script>
+<script src="http://ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+</head>
+<body>
+<!--onclick="pgvSendClick({hottag:'a20150825file.index.btn.open'});"--><!--统计点击备用-->
+<!--==================================================头部-->
+<div class="all-body">
+	<header class="common_header">
+		<div class="cover_content clear">
+			<a href="http://xjhx.qq.com/" class="web_logo" onclick="pgvSendClick({hottag:'a20161123zcwlm.index.nav.logo'})">
+				<div class="logo"><img src="ossweb-img/logo.png"></div>
+				<div class="logo-l">
+					<h1>星际火线</h1>
+					<rb>科幻射击，战出未来</rb>
+				</div>
+			</a>
+			<a href="" class="btn_download p_common" target="_blank" title="立即下载"></a>
+		</div>
+	</header>
+	<!---------------------内容部分----------------------->
+	<div class="bg bg-pic sw-1">
+		<div id="container" class="container">
+			<ul id="scene" class="scene">
+				<li class="layer" data-depth="0.60"><img src="ossweb-img/top-1.png"></li>
+			</ul>
+		</div>
+		<div class="title-t"><img src="ossweb-img/title.png"></div>
+		<a class="title-yuye" href=""><img src="ossweb-img/yuye.png"></a>
+		<div class="title-fj"><img src="ossweb-img/tx2.png"></div>
+		<img src="ossweb-img/bg_01.jpg">
+	</div>
+	<div class="bg bg-pic sw-2">
+		<div class="sqiang">
+			<ul id="scene2" class="scene">
+				<li class="layer" data-depth="0.60"><img src="ossweb-img/tx4.png"></li>
+			</ul>
+		</div>
+		<div class="swiper-container sw-width"><!--sw-width 来控制它的宽度-->
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="ossweb-img/pic-1.png"> </div>
+				<div class="swiper-slide"><img src="ossweb-img/pic-2.png"></div>
+				<div class="swiper-slide"><img src="ossweb-img/pic-3.png"></div>
+				<div class="swiper-slide"><img src="ossweb-img/pic-4.png"></div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+		<img src="ossweb-img/bg_02.jpg">
+	</div>
+	<div class="bg bg-pic sw-1">
+		<div class="sqiang">
+			<ul id="scene3" class="scene">
+				<li class="layer" data-depth="0.60"><img src="ossweb-img/tx3.png"></li>
+			</ul>
+		</div>
+		<a class="CG-video" href="javascript:showDia('dia');" onclick="anniu('q03073d94ng')"><img src="ossweb-img/video.png"></a>
+		<a href="https://game.weixin.qq.com/cgi-bin/h5/static/group/index.html?appid=wx96f077006d492fea" class="CG-v1"><img src="ossweb-img/wx.png"></a>
+		<a href="https://game.weixin.qq.com/cgi-bin/h5/static/circle/index.html?jsapi=1&auth_type=2&ssid=12" class="CG-v2"><img src="ossweb-img/py.png"></a>
+		<a href="" class="CG-v3"><img src="ossweb-img/ewm.png"></a>
+		<img src="ossweb-img/bg_03.jpg">
+	</div>
+	<div class="bg bg-pic sw-1">
+		<img src="ossweb-img/bg_04.jpg">
+	</div>
+</div>
+<!--弹窗内容-->
+<div class="dia" id="dia" style="display:none">
+	<div class="dia-con">
+		<div id="mod_player" class="video"></div>
+	</div>
+	<a class="dia-close" href="javascript:showDialog.hide()" onclick="anniu('')" title="关闭">×</a>
+</div>
+<!--js 弹窗-->
+<script src="http://ossweb-img.qq.com/images/js/comm/showDialog.min.js"></script>
+<script>
+	function showDia(e){
+		showDialog.show({
+			id:e,    //需要弹出的id，如果是弹出页面上的div，则该选项为必选
+			bgcolor:"#000000",//弹出“遮罩”的颜色，格式为"#FF6600"，可选，默认为"#fff"
+			opacity:50     //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+		});
+	}
+</script>
+<!--js 脚本-->
+<script>
+	var swiper = new Swiper('.sw-2 .swiper-container', {
+		pagination: '.sw-2 .swiper-pagination',
+		paginationClickable: '.sw-2 .swiper-pagination',
+		nextButton: '.sw-2 .swiper-button-next',
+		prevButton: '.sw-2 .swiper-button-prev',
+		spaceBetween: 30,
+		autoplay: 5000//可选选项，自动滑动
+	});
+</script>
+<!--js 统计代码-->
+<script src="http://pingjs.qq.com/ping_tcss_ied.js"></script>
+<script type="text/javascript">
+	if(typeof(pgvMain) == 'function');pgvMain();
+	if(navigator.appVersion.indexOf('Android') != -1){
+			document.addEventListener("DOMContentLoaded",function(e){
+				document.getElementById('wrap').style.zoom = e.target.activeElement.clientWidth/320;
+			});
+	};
+</script>
+<!--视频-->
+<script src="http://imgcache.qq.com/tencentvideo_v1/tvp/js/tvp.player_v2.js"></script>
+<script>
+	function anniu(idv) {
+		var video = new tvp.VideoInfo();
+		video.setVid(idv);
+		var player = new tvp.Player();
+		player.create({
+			width: 250,
+			height: 180,
+			video: video,
+			modId: "mod_player",
+			pic: "ossweb-img/video-pic.png",        //视频封面地址
+			vodFlashSkin: "http://imgcache.qq.com/minivideo_v1/vd/res/skins/TencentPlayerMiniSkin.swf",  //精简皮肤
+			autoplay: true   //是否自动播放
+		});
+	}
+</script>
+<!--js-->
+<script src="http://ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+<script src="ossweb-img/jquery.parallax.js"></script>
+<script>
+	$('#scene').parallax();
+	$('#scene2').parallax();
+	$('#scene3').parallax();
+</script>
+</body>
+</html>

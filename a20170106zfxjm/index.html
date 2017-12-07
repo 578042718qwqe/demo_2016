@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="gb2312"/>
+<meta name="applicable-device" content="mobile">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1"/>
+<meta name="viewport" content="width=320,minimum-scale=0,maximum-scale=5,user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta content="yes" name="mobile-web-app-capable">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta name="robots" content="all" />
+<meta name="author" content="Tencent-TGideas" />
+<meta name="Copyright" content="Tencent" />
+<meta name="Description" content="《星际火线》是一款3D动作射击手游。次时代3D，呈现震撼未来战场；三枪一体，成就无敌枪械大师；独创飞翼，带你穿越星际" />
+<meta name="Keywords" content="星际火线,星际火线手游,星际火线官网,腾讯,2016,星际,射击,动作,最火手游,新游,枪战,第三人称,TPS,网游,多人对战,狙击,星际火线" />
+<link rel="stylesheet" href="ossweb-img/comom.css">
+<title>星际火线-星际火线官网-腾讯游戏</title>
+<!-- 设计:cp | 重构:cp | 创建时间:17-01-06 -->
+<style>
+@media only screen and (max-width:1536px),only screen and (max-device-width:1536px){body,html{font-size:240px}}
+@media only screen and (max-width:1080px),only screen and (max-device-width:1080px){body,html{font-size:337.5px}}
+@media only screen and (max-width:960px),only screen and (max-device-width:960px){body,html{font-size:300px}}
+@media only screen and (max-width:800px),only screen and (max-device-width:800px){body,html{font-size:250px}}
+@media only screen and (max-width:720px),only screen and (max-device-width:720px){body,html{font-size:225px}}
+@media only screen and (max-width:640px),only screen and (max-device-width:640px){body,html{font-size:200px}}
+@media only screen and (max-width:600px),only screen and (max-device-width:600px){body,html{font-size:187.5px}}
+@media only screen and (max-width:540px),only screen and (max-device-width:540px){body,html{font-size:168.75px}}
+@media only screen and (max-width:480px),only screen and (max-device-width:480px){body,html{font-size:150px}}
+@media only screen and (max-width:414px),only screen and (max-device-width:414px){body,html{font-size:129.38px}}
+@media only screen and (max-width:400px),only screen and (max-device-width:400px){body,html{font-size:125px}}
+@media only screen and (max-width:375px),only screen and (max-device-width:375px){body,html{font-size:117.19px}}
+@media only screen and (max-width:360px),only screen and (max-device-width:360px){body,html{font-size:112.5px}}
+@media only screen and (max-width:320px),only screen and (max-device-width:320px){body,html{font-size:100px}}
+@media only screen and (max-width:240px),only screen and (max-device-width:240px){body,html{font-size:75px}}
+/*头部样式*/
+b,body,dd,dl,dt,form,h1,h2,h3,h4,header,i,img,input,ol,p,rb,rt,ruby,section,ul{margin:0;padding:0;font-style:normal}
+body,h1,h2,html{font-family:"微软雅黑",Helvetica,STHeiTi,sans-serif;font-weight:400;line-height:1; font-size: .12rem;}
+i{display:block;font-style:normal}
+li{list-style:none}
+a{text-decoration:none}
+img{border:0}
+section{font-size:.16rem;}
+/*背景*/
+.bg { width: 100%; height: auto; position: relative; overflow:hidden;}
+.bg img { width: 100%; height: auto; display: block;}
+.bg-pic{ position:relative; overflow:hidden;}
+.bg-pic img{width: 100%;height: auto; border:0;}
+/*home*/
+.home{position: absolute; width: 100px; top:140px; left: 170px;}
+.jcyd-word{ width: 100%; float: left; background-color:#823303; display: none;}
+.jcyd-word-tab{ width: 100%; float: left; border-bottom: 1px solid #9a572e; height: 41px;}
+.jcyd-word-tab-2{ width:100%; overflow-x: scroll;}
+.jcyd-word-tab ul{ width: 100%; float: left;}
+.jcyd-word-tab ul li{ width:33%; float: left; text-align: center; height:40px; line-height:40px; color:#f7edc8; font-size: 16px;}
+.jcyd-word-tab ul li.on{ color: #ffeb6b; border-bottom:#ffeb6b 2px solid;}
+.jcyd-head{ width: 100%; float: left; height:43px; background:url("ossweb-img/dh.png") 0 0 no-repeat; background-size:cover; text-align: center; line-height: 43px; font-size:18px; color: #FFF; position: relative;}
+.bg-h2 ul li.tab .jcyd-head-icon{ position: absolute; top:15px; left:220px; width:21px; height:19px; background: url("ossweb-img/icon2.png") 0 0 no-repeat; background-size: 100%;}
+.bg-h2 ul li.tab.on .jcyd-head-icon{ position: absolute; top:15px; left:220px; width:21px; height:19px; background: url("ossweb-img/icon.png") 0 0 no-repeat; background-size: 100%;}
+.jcyd-word-tab-ul ul li.on{display: block;}
+.jcyd-word-tab-ul ul li{ display: none;}
+.jcyd-word-tab-ul{ display: block;}
+.jcyd-word-u2{ width:540px !important;}
+.jcyd-word-u2 li{ width:90px !important;}
+.jcyd-word-u3 li{ width: 50% !important;}
+.jcyd-word-p{ padding:15px; color:#f3e79e; line-height: 22px; font-size: 14px;}
+.jcyd-word-p span{ display: block; clear: both; width: 100%; line-height:30px; font-size:16px; font-weight: bold; color:#ffeb6b;}
+.jcyd-word-p img{padding: 6px 0;}
+/*tab*/
+.bg-h2 ul{ float: left; width: 100%;}
+.bg-h2 ul li.tab{ float: left; width: 100%;}
+.bg-h2 ul li.on .jcyd-word{ display: block !important;}
+.text{
+	display: inline-block;
+	color: green;
+	font-size:1em;
+	font-family:"微软雅黑";
+	font-weight: bold;
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(255, 255, 255, 1)), to(rgba(255, 196, 101, 1)));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+/*QQ部落为空*/
+.normal_code p{float:none;margin:0 auto; background-color: #000; text-align: center;}
+.footer_copyright{ width: 100%; text-align: center;  background-color: #000; padding-top: 10px; height:110px; line-height: 16px;}
+.beian-1{ width: 100%; display: block; text-align: center;}
+.beian-2{ width: 100%; display: block; text-align: center;}
+.footer_copyright-w{ clear: both; width: 100%; text-align: center;}
+</style>
+<script src="http://ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+</head>
+<body>
+	<!--======================头部============================-->
+	<header class="common_header">
+		<div class="cover_content clear">
+			<a href="http://xjhx.qq.com/" class="web_logo" onclick="pgvSendClick({hottag:'a20170106zfxjm.index.nav.logo'})">
+				<div class="logo"><img src="ossweb-img/logo.png"></div>
+				<div class="logo-l">
+					<h1>星际火线</h1>
+					<rb>星际\射击\动作</rb>
+				</div>
+			</a>
+			<!--<a href="" class="btn_download p_common" target="_blank" title="立即下载">立即下载</a> -->
+		</div>
+	</header>
+	<div id="btnNavSlide" class="btn_nav_slide" href=""><i class="draw" title="导航开关"></i></div>
+	<nav id="commonNav" class="common_nav o_h">
+		<div class="cover_content">
+			<ul>
+				<li><a href="http://xjhx.qq.com/m/" onclick="pgvSendClick({hottag:'a20170106zfxjm.index.nav.link1'})">首页</a></li>
+				<li><a href="http://xjhx.qq.com/webplat/info/news_version3/23088/23313/23317/m14857/list_1.shtml" onclick="pgvSendClick({hottag:'a20170106zfxjm.index.nav.link2'})">活动资讯</a></li>
+				<li><a href="http://xjhx.qq.com/webplat/info/news_version3/23088/23313/23320/m14857/list_1.shtml" onclick="pgvSendClick({hottag:'a20170106zfxjm.index.nav.link3'})">游戏攻略</a></li>
+				<li><a href="http://agame.qq.com/bbs_joy/forum.shtml?fid=57403&frompcbbs=1&mod=forumdisplay&ADTAG=game.web.xjhx&c=forum&m=forum" onclick="pgvSendClick({hottag:'a20170106zfxjm.index.nav.link4'})">游戏论坛</a></li>
+				<li><a href="http://xjhx.qq.com/m/list-new.shtml" onclick="pgvSendClick({hottag:'a20170106zfxjm.index.nav.link5'})">游戏图库</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!--------------------------内容------------------------------->
+	<div class="bg bg-pic bg-h1">
+		<a class="home" href="http://xjhx.qq.com/m/" onclick="pgvSendClick({hottag:'a20170106zfxjm.index.home.open1'})"><img src="ossweb-img/home.png"></a>
+		<img src="ossweb-img/bg_01.jpg">
+	</div>
+	<div class="bg bg-pic bg-h2">
+		<ul>
+			<li class="tab on">
+				<div class="jcyd-head" onclick="pgvSendClick({hottag:'a20170106zfxjm.index.daohang.open1'})"><a class="text">01 基础引导</a><div class="jcyd-head-icon"></div></div>
+				<div class="jcyd-word">
+					<div class="jcyd-word-tab">
+						<ul>
+							<li onclick="pgvSendClick({hottag:'a20170106zfxjm.index.sdh.open1'})">新手引导</li>
+							<li onclick="pgvSendClick({hottag:'a20170106zfxjm.index.sdh.open2'})">角色建立</li>
+							<li onclick="pgvSendClick({hottag:'a20170106zfxjm.index.sdh.open3'})">界面说明</li>
+						</ul>
+					</div>
+					<div class="jcyd-word-tab-ul">
+						<ul>
+							<li>
+								<div class="jcyd-word-p">
+									<span>1、开场介绍</span>
+									在玩家安装好星际火线，并首次开启时，会进入新手引导！首先玩家会看到一段开场动画，我们可以通过开场动画了解星际火线的游戏背景及故事发展！<br>
+									<img src="ossweb-img/wrok-1.png">
+									<span>2、操作引导</span>
+									在新手引导中，系统会通过简单的关卡对玩家进行引导，教大家基础的操作及武器、机甲的使用！游戏画面左下角有一个圆圈状的虚拟按钮，玩家通过滑动虚拟按钮控制人物的移动。而右下角分别有三个武器按钮，两个技能按钮和一个机甲按钮！玩家可以自由选择武器、机甲、技能的使用！
+									<br>
+									<img src="ossweb-img/wrok-2.png">
+									<span>3、战斗引导</span>
+									在新手引导中，系统会通过简单的关卡对玩家进行引导，教大家基础的操作及武器、机甲的使用！游戏画面左下角有一个圆圈状的虚拟按钮，玩家通过滑动虚拟按钮控制人物的移动。而右下角分别有三个武器按钮，两个技能按钮和一个机甲按钮！玩家可以自由选择武器、机甲、技能的使用！
+									<br>
+									<img src="ossweb-img/wrok-3.png">
+								</div>
+							</li>
+							<li>
+								<div class="jcyd-word-p">
+									<span>1、登陆界面</span>
+									当玩家通过新手引导后，便会进入登陆界面！玩家在这里可以看到【与微信好友玩】、【与QQ好友玩】两个按钮，分别是微信登陆和QQ登陆通道。玩家可以根据自己的需要，选择并使用对应帐号登陆星际火线！<br>
+									<img src="ossweb-img/wrok2-1.png">
+									<span>2、区服选择</span>
+									当玩家进入游戏后，可以通过点击选区进入服务器选择界面，这里有很多服务器可以供玩家选择！玩家选择区服后，便可正式进入游戏。
+									<br>
+									<img src="ossweb-img/wrok2-2.png">
+									<span>3、角色建立</span>
+									星际火线设有男、女两种角色，玩家选择自己喜欢的角色后，输出昵称便可进入游戏。
+									<br>
+									<img src="ossweb-img/wrok2-3.png">
+								</div>
+							</li>
+							<li>
+								<div class="jcyd-word-p">
+									<span>1、活动</span>
+									活动系统处于游戏主界面的右上角，充值活动、签到奖励、在线奖励、嘉年华、累积登陆应有尽有，玩家可以通过各种福利活动活动更多资源和道具，从而更好的提升自己的战斗力。<br>
+									<img src="ossweb-img/wrok3-1.jpg">
+									<span>2、主体界面</span>
+									当玩家进入游戏后，会看到角色、机甲等标志，这是星际火线的主要界面！各种福利、不同的副本、竞技入口都在这里。点击机甲，还可以进入机甲界面，进行解锁、强化机甲！往右拖动后，还可以看到商店、军团、生活区、排行榜、科技实验室等玩法哦！
+									<br>
+									<img src="ossweb-img/wrok3-2.jpg">
+									<span>3、社交</span>
+									在主界面的左侧一览中，为星际火线的社交系统区域！这里有社区、部落、好友、聊天等功能，玩家可以随心所欲的和小伙伴交流游戏心得！
+									<br>
+									<img src="ossweb-img/wrok3-3.jpg">
+									<span>4、装备</span>
+									在屏幕的正下方是星际火线的装备系统栏，角色、枪械、军衔、装备、飞翼、佣兵、星宠、任务、仓库入口都在这里，玩家可以通过强化各种装备提升自己的战斗力。
+									<br>
+									<img src="ossweb-img/wrok3-4.jpg">
+									<span>5、副本</span>
+									在主界面的右下角，有战役副本入口。玩家通过战役副本可以了解并参与剧情，挑战高难度关卡，获得更多的资源！
+									<br>
+									<img src="ossweb-img/wrok3-5.jpg">
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="tab">
+				<div class="jcyd-head" onclick="pgvSendClick({hottag:'a20170106zfxjm.index.daohang.open2'})"><a class="text">02 游戏内系统</a><div class="jcyd-head-icon"></div></div>
+				<div class="jcyd-word">
+					<div class="jcyd-word-tab">
+						<div class="jcyd-word-tab-2">
+							<ul class="jcyd-word-u2">
+								<li class="on" onclick="pgvSendClick({hottag:'a20170106zfxjm.index.sdh.open4'})">角色系统</li>
+								<li onclick="pgvSendClick({hottag:'a20170106zfxjm.index.sdh.open5'})">装备系统</li>
+								<li onclick="pgvSendClick({hottag:'a20170106zfxjm.index.sdh.open6'})">任务系统</li>
+								<li onclick="pgvSendClick({hottag:'a20170106zfxjm.index.sdh.open7'})">福利系统</li>
+								<li onclick="pgvSendClick({hottag:'a20170106zfxjm.index.sdh.open8'})">仓库系统</li>
+								<li onclick="pgvSendClick({hottag:'a20170106zfxjm.index.sdh.open9'})">商店系统</li>
+							</ul>
+						</div>
+					</div>
+					<div class="jcyd-word-tab-ul">
+						<ul>
+							<li class="on">
+								<div class="jcyd-word-p">
+									<span>1、系统简介</span>
+									角色系统是星际火线中的基础系统，角色系统是一个非常精彩多样的系统！其中涵盖角色、技能、衣橱、天赋、枪械图鉴、成就、机甲图鉴、能量晶石、巅峰技能等9个玩法！<br>
+									<img src="ossweb-img/wrok3-1.jpg">
+									<span>2、角色名片</span>
+									角色名片是角色系统中的基础，玩家可以在角色名片中看到玩家的基础信息！比如角色属性、装备、机甲、的播放机、段位、军衔等，玩家可以通过角色名片了解自己角色的战斗力!
+									<br>
+									<img src="ossweb-img/wrok3-2.jpg">
+									<span>3、角色技能</span>
+									角色技能是玩家在战斗中的辅助技能，玩家可以通过提高角色等级获得角色技能，并且装备在技能栏中，以便于在战斗中释放。角色技能是主动技能，不同的技能具有不同的实战效果。
+									<br>
+									<img src="ossweb-img/wrok3-3.jpg">
+									<span>4、衣橱</span>
+									衣橱是星际火线中的时装系统，玩家可以在各种玩法中获取衣服、发型、翅膀幻化外观等到道具，然后再通关衣橱装备在角色身上，让角色变的更加炫酷！而且角色的衣服、发型、幻化都有加成属性哦。
+									<br>
+									<img src="ossweb-img/wrok3-4.jpg">
+									<span>5、角色天赋</span>
+									天赋系统是角色的被动技能，玩家可以通过开启天赋、提升天赋等级，来获得更高的战斗力。如果玩家对天赋的加点不满意，也可以通过重置按钮，重置所有的天赋点。
+									<br>
+									<img src="ossweb-img/wrok3-5.jpg">
+									<br>
+									<span>6、巅峰技能</span>
+									当角色满级之后再获得经验，将会获得巅峰等级！当玩家的每次提升巅峰等级时，可以获得巅峰技能点升级巅峰技能。巅峰技能同属被动技能，可以在各方面提高玩家的战斗力。
+									<br>
+									<img src="ossweb-img/wrok3-5.jpg">
+								</div>
+							</li>
+							<li>
+								<div class="jcyd-word-p">
+									<span>1、装备</span>
+									装备是由6个部件组成，玩家可以通过战役、时空战役获取装备！并且当玩家达到一定等级时，可以开启装备强化、升星等操作，从而提升战斗力。<br>
+									<img src="ossweb-img/wrok5-1.png">
+									<span>2、枪械</span>
+									枪械是星际火线中的核心装备，玩家可以通过各种玩法获取强大的枪械，并且进行升品、升星、升级等操作，从而提高输出能力。而且枪械还拥有强大的被动技能，可以帮助玩家在副本、竞技场中打出更高的伤害。不同品级的枪械，威力也是不一样的哟！
+									<br>
+									<img src="ossweb-img/wrok5-2.png">
+									<span>3、飞翼</span>
+									飞翼是星际火线中一种特殊装备，玩家获取飞翼后，可以进行装备，并且搭配组件，获得极高的战斗力加成。而且飞翼可以幻化成各种炫酷的翅膀外观，让玩家的角色更加炫酷。
+									<br>
+									<img src="ossweb-img/wrok5-3.png">
+									<span>4、佣兵</span>
+									佣兵是玩家征战各种副本的好伙伴，佣兵不但可以在副本中帮助玩家战斗，还能提供战力加成。而且佣兵也可以使用枪械、装备、技能。玩家升级佣兵，可以获得更多的战斗收益。
+									<br>
+									<img src="ossweb-img/wrok5-4.png">
+								</div>
+							</li>
+							<li>
+								<div class="jcyd-word-p">
+									<span>1、日常任务</span>
+									日常任务是玩家在星际火线中必做的任务，玩家每天完成对应的日常任务，可以获得大量的升级经验！<br>
+									<img src="ossweb-img/wrok-rw-1.png">
+									<span>2、成就任务</span>
+									成就并不是在任务系统中，玩家可以通过角色系统进入成就任务界面。成就任务分为三种，分别是养成、战斗、交互。完成不同的成就任务，可以获得大量的钻石、道具等奖励。
+									<br>
+									<img src="ossweb-img/wrok-rw-2.png">
+								</div>
+							</li>
+							<li>
+								<div class="jcyd-word-p">
+									<span>1、累积登录</span>
+									当玩家进入星际火线后，便可以参与累积登录活动。每天登陆星际火线即可领取福利，海量金币、超神武器、炫酷机甲任你拿！<br>
+									<img src="ossweb-img/wrok-wl-1.png">
+									<span>2、开服嘉年华</span>
+									开服嘉年华是限时活动，玩家可以通过完成嘉年华的活动，获得大量的钻石、机甲碎片、枪械升级材料、枪械碎片等珍惜道具。但开服嘉年华只能在开服的前7天参与哦！
+									<br>
+									<img src="ossweb-img/wrok-wl-2.png">
+									<span>3、签到有礼</span>
+									签到活动是星际火线中最基本的福利活动，玩家每天登陆星际火线，便可以点击领取奖励。累积一定的签到天数，还能领取额外的奖励。玩家如果少签或漏签，也可以通过补签找回奖励。
+									<br>
+									<img src="ossweb-img/wrok-wl-3.png">
+									<span>4、活动福利</span>
+									活动福利包括很多种，比如资源找回、新兵补给包、贸易大促销、积少成多、月卡福利、成长基金。玩家进入星际火线后，可以根据自己的需求，参与并获得奖励。
+									<br>
+									<img src="ossweb-img/wrok-wl-4.png">
+									<span>5、在线有礼</span>
+									在线有礼是在线时间奖励，玩家在线达到一定的时间后，可以领取对应的在线奖励。玩家每天在线120分钟，便可领取全部奖励。
+									<br>
+									<img src="ossweb-img/wrok-wl-5.png">
+								</div>
+							</li>
+							<li>
+								<div class="jcyd-word-p">
+									<span>1、仓库分类</span>
+									仓库是玩家的储存系统，玩家的一些道具、枪械都可以在仓库中找到。仓库系统分为两个，分别是枪械仓库和道具仓库！<br>
+									<img src="ossweb-img/wrok-ck-1.png">
+									<span>2、枪械仓库</span>
+									玩家点击进入仓库后，最先看到的就是枪械仓库！而且枪械仓库根据枪械的系别，分为突袭系、毁灭系、特殊系，玩家可以根据自己想要的枪械类别，快速的找到对应的枪械。
+									<br>
+									<img src="ossweb-img/wrok-ck-2.png">
+									<span>3、道具仓库</span>
+									道具仓库主要存放玩家的一些消耗道具，比如枪械升品材料箱、宠物经验材料、觉醒石、货柜钥匙等物品。
+									<br>
+									<img src="ossweb-img/wrok-ck-3.png">
+								</div>
+							</li>
+							<li>
+								<div class="jcyd-word-p">
+									<span>1、商店入口</span>
+									游戏商店是玩家购买装备和道具的地方，玩家可以直接在推荐类别中购买各种装备、道具！不过星际火线中的商城入口是单独设计的，玩家在进入游戏后，向右拖动界面，便可以找到商店入口！<br>
+									<img src="ossweb-img/wrok-jt-1.png">
+									<span>2、神秘货柜</span>
+									神秘货柜是星际火线中的抽奖系统，玩家可以花费钻石开启货柜，并随机获得海量道具。而且玩家每开启一次神秘货柜，便可以获得1点信誉点。当玩家获得足够的信誉点后，可以通过信誉点兑换，兑换一些珍惜道具！
+									<br>
+									<img src="ossweb-img/wrok-jt-2.png">
+									<span>3、地下集市</span>
+									道具仓库主要存放玩家的一些消耗道具，比如枪械升品材料箱、宠物经验材料、觉醒石、货柜钥匙等物品。
+									<br>
+									<img src="ossweb-img/wrok-jt-3.png">
+									<span>4、最强兵王商店</span>
+									最强兵王商店是竞技商店的一种，玩家可以在最强兵王商店中购买紫色武器碎片、机甲碎片等道具。不过在最强兵王商店中，玩家需要花费攻擂点购买道具。而攻擂点则需要玩家在竞技玩法的最强兵王中获取。
+									<br>
+									<img src="ossweb-img/wrok-jt-4.png">
+									<span>5、竞技场商店</span>
+									顾名思义，竞技场商店是专属竞技玩法的商店！如果想要购买竞技商店中的道具，则需要在竞技技场中获得足够的竞技场功勋才行哦！
+									<br>
+									<img src="ossweb-img/wrok-jt-5.png">
+									<span>6、军团商店</span>
+									军团商店是军团专属商店，首先玩家要加入军团，然后通过军团捐献或军团中的各种玩法，获得军团贡献点。然后才能通过军团商店，购买对应的道具。
+									<br>
+									<img src="ossweb-img/wrok-jt-6.png">
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="tab">
+				<div class="jcyd-head" onclick="pgvSendClick({hottag:'a20170106zfxjm.index.daohang.open3'})"><a class="text">03 玩法系统</a><div class="jcyd-head-icon"></div></div>
+				<div class="jcyd-word">
+					<div class="jcyd-word-tab">
+						<ul  class="jcyd-word-u3">
+							<li class="on" onclick="pgvSendClick({hottag:'a20170106zfxjm.index.sdh.open10'})">副本系统</li>
+							<li onclick="pgvSendClick({hottag:'a20170106zfxjm.index.sdh.open11'})">竞技系统</li>
+						</ul>
+					</div>
+					<div class="jcyd-word-tab-ul">
+						<ul>
+							<li class="on">
+								<div class="jcyd-word-p">
+									<span>1、战役副本</span>
+									战役副本是星际火线中的剧情副本，分为主线、精英、时空三个系列！玩家可以通过战役副本获取经验、道具，提升自身的等级和战斗力。其中时空副本可以产出大量的装备，玩家可以多多参与。<br>
+									<img src="ossweb-img/wrok-fb-1.png">
+									<span>2、上古遗迹</span>
+									上古遗迹是星际火线中飞翼的重要产出地，玩家可以以单人、组队的形式挑战各种上古文明遗迹。不同难度的上古遗迹，会掉落不同品级的飞翼。如果玩家达到至尊8，还可以开启宝藏功能，直接破坏宝箱获得奖励。
+									<br>
+									<img src="ossweb-img/wrok-fb-2.png">
+									<span>3、挑战一一全息训练场</span>
+									全息训练场有三种，分别是产出金币的黄金国度；产出枪械经验卡的极速战场，以及产出佣兵经验卡的虚空星源。全息训练场中的每种玩法每天可以挑战三次，挑战成功便可获得对应的奖励。
+									<br>
+									<img src="ossweb-img/wrok-fb-3.png">
+									<span>4、挑战一一丧尸围城</span>
+									丧尸围城也是挑战系列玩法之一。玩家从第一层开始逐层挑战大量的丧尸，丧尸的难度会随着挑战层数的增加而变大，不过玩家也可以通过奖励层获得增益BUFF，提高自己的通关能力。丧尸围城玩法主要产出机甲碎片、金币、枪械经验卡等经验道具！
+									<br>
+									<img src="ossweb-img/wrok-fb-4.png">
+									<span>5、挑战一一异次元杀阵</span>
+									玩家首次解锁异次元杀阵后，将会被自动分配到一个最多10人组成的小组。玩家每次可以选择任意四个关卡进行闯关，闯关成功后则可以挑战BOSS并获得击败BOSS的奖励。系统将会以玩家本日最好的挑战成绩进行排名，并结算奖励。异次元杀阵主要产出晶石宝箱，可用来镶嵌在装备上。
+									<br>
+									<img src="ossweb-img/wrok-fb-5.png">
+									<span>6、挑战一一迷失空间</span>
+									迷失空间可以为玩家提供金币、星宠食物等奖励，迷失空间作为日常挑战，玩家失败后可以再次挑战，通关层数越高，奖励也越加丰厚哦，且至尊10即可开启精英难度。
+									<br>
+									<img src="ossweb-img/wrok-fb-6.png">
+									<span>7、无尽位面</span>
+									无尽位面有两种玩法，分别是位面入侵和位面裂隙。位面入侵玩法需要两名旺季合作战斗，抵御入侵位面的生物，在一定的时间内，保护位面控制塔。
+									而位面裂隙则是限时活动，玩家可以在活动时间内进入位面裂隙，对【收割者格萨拉】进行攻击，玩家造成的伤害越高，排名越靠前，获得的奖励也越多！
+									<br>
+									<img src="ossweb-img/wrok-fb-7.png">
+								</div>
+							</li>
+							<li>
+								<div class="jcyd-word-p">
+									<span>1、最强兵王</span>
+									最强兵王是星际火线中的自动竞技玩法，玩家自主选择对手进行膜拜或攻擂！如果战斗胜利，若防守方的排名高于进攻方，双方排名对调！玩家每天可以发起5次免费挑战，挑战成功可提升排名，当玩家到达一定的排名后，可以获得丰厚的排名奖励。<br>
+									<img src="ossweb-img/wrok-jj-1.png">
+									<span>2、竞技场</span>
+									竞技场中玩法比较多样化，玩家可以自由选择1V1、3V3或终极大乱斗进行对战。其中1V1是单人竞技，而3V3是组队竞技。大乱斗则是系统随机匹配6名玩家，各自为战并争夺最后的胜利！在竞技场玩法中，玩家可以获得枪械碎片、竞技场功勋等道具。
+									<br>
+									<img src="ossweb-img/wrok-jj-2.png">
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="tab">
+				<div class="jcyd-head" onclick="pgvSendClick({hottag:'a20170106zfxjm.index.daohang.open4'})"><a class="text">04 社交系统</a><div class="jcyd-head-icon"></div></div>
+				<div class="jcyd-word">
+					<div class="jcyd-word-tab-ul">
+						<div class="jcyd-word-p">
+							<span>1、军团系统</span>
+							最强兵王是星际火线中的自动竞技玩法，玩家自主选择对手进行膜拜或攻擂！如果战斗胜利，若防守方的排名高于进攻方，双方排名对调！玩家每天可以发起5次免费挑战，挑战成功可提升排名，当玩家到达一定的排名后，可以获得丰厚的排名奖励。<br>
+							<img src="ossweb-img/wrok-sj-1.png">
+							<span>2、好友系统</span>
+							在星际火线中，好友系统也是经过精心设计的哟！系统会将玩家的好友分为QQ/微信好友和游戏好友，让大家更清楚的找到自己的小伙伴。而且好友系统中设置了好友礼品，大家千万不要忘了为小伙伴送个好礼。
+							为了让大家更好的体验游戏，避免被自己不喜欢的人骚扰。星际火线还为玩家设计了黑名单，不想见到的人，统统把他们扔进黑名单吧！
+							<br>
+							<img src="ossweb-img/wrok-sj-2.png">
+							<span>3、聊天系统</span>
+							聊天系统是星际火线中最主要的社交方式，玩家可以在聊天界面自由选择世界、军团、好友、组队、公告频道，和自己的队友、伙伴进行沟通。
+							<br>
+							<img src="ossweb-img/wrok-sj-3.png">
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="tab">
+				<div class="jcyd-head" onclick="pgvSendClick({hottag:'a20170106zfxjm.index.daohang.open5'})"><a class="text">05 成就系统</a><div class="jcyd-head-icon"></div></div>
+				<div class="jcyd-word">
+					<div class="jcyd-word-tab-ul">
+						<div class="jcyd-word-p">
+							<span>1、军衔系统</span>
+							军衔系统是星际火线中的成就玩法之一，当玩家参与各种玩法，并且满足一定的条件即可提升军衔等级。当玩家提升军衔等级时，可以获得枪械、机甲和相应的军衔属性。<br>
+							<img src="ossweb-img/wrok-cj-1.png">
+							<span>2、排行榜</span>
+							排行榜是一种公开的成就系统！玩家在星际火线各种玩法中获得的成就，都将在这里展示，并且被所有的玩家看到。排行榜中分别设置了战力榜、最强兵王榜、军团榜、魅力榜、鲜花周榜、丧尸围城、星宠榜等，只要你有足够的实力，必然可以登顶星际！
+							<br>
+							<img src="ossweb-img/wrok-cj-2.png">
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!--========================foot==========================-->
+	<div class="gz">
+		<div class="gzh bg">
+			<div class="gzh-ewm"><img src="ossweb-img/ewm.jpg"></div>
+			<span class="t">长按关注星际火线公众号</span>
+			<span class="d">获取更多官方信息</span>
+		</div>
+		<a id="toTop" class="to_top" href="#top" onclick="pgvSendClick({hottag:'a20170106zfxjm.index.footer.return'})">返回顶部</a>
+	</div>
+	<div class="foot">
+		<footer>
+			<div class="qrcode_wrap o_h">
+				<div class="normal_code o_h">
+					<p>微信搜索<br><span class="yel">【星际火线】</span><br>微信公众号</p>
+					<!--  <a href="http://buluo.qq.com/mobile/barindex.html?bid=252960"onclick="return window.pgvHref({hottag:'mobile.index.buluo.browser'},this)">
+									<p><i class="sq_ico p_common"></i>点击关注<br><span class="yel">【兴趣部落名称】</span><br>兴趣部落</p>
+								</a> -->
+				</div>
+			</div>
+			<div class="footer_copyright o_h">COPYRIGHT &copy; 1998 - 2014 TENCENT. ALL RIGHTS RESERVED.<br>腾讯公司版权所有
+				<a href="http://game.qq.com/culture2.htm" class="beian-2">新出网证（粤）字010号</a>
+				<a href="http://www.qq.com/culture.shtml" class="beian-1">粤文网[2014]0633-233号</a>
+				<div class="footer_copyright-w">文网游备字【2016】M-RPG6761号</div>
+			</div>
+		</footer>
+		<script src="http://ossweb-img.qq.com/images/js/dcv/ww_tcss.js"></script>
+		<script>if(typeof(pgvMain) == 'function') pgvMain();</script>
+	</div>
+<!--js 统计代码-->
+<script src="http://pingjs.qq.com/ping_tcss_ied.js"></script>
+<script type="text/javascript">
+	if(typeof(pgvMain) == 'function');pgvMain();
+	if(navigator.appVersion.indexOf('Android') != -1){
+			document.addEventListener("DOMContentLoaded",function(e){
+				document.getElementById('wrap').style.zoom = e.target.activeElement.clientWidth/320;
+			});
+	};
+</script>
+<!--head切换-->
+<script src="http://ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+<script src="http://pingjs.qq.com/ping_tcss_ied.js"></script>
+<script>
+	$("#btnNavSlide").click("tap",function(){
+		if ($(".G_open").length) {
+			$("#commonNav").removeClass("G_open");
+			$("#btnNavSlide").removeClass("G_close");
+			$("body").unbind("touchmove", false);
+			pgvSendClick({
+				hottag: 'a20170106zfxjm.nav.banner.close'
+			});
+		} else {
+			$("#commonNav").addClass("G_open");
+			$("#btnNavSlide").addClass("G_close");
+			$("body").bind("touchmove", false);
+			pgvSendClick({
+				hottag: 'a20170106zfxjm.nav.banner.open'
+			});
+		}
+	});
+</script>
+<!--tab切换-->
+<script>
+	$(".jcyd-word-tab ul li").eq(0).addClass("on");
+	$(".jcyd-word-tab-ul ul li").eq(0).addClass("on");
+	/*big*/
+	$(".jcyd-head").bind("click",function () {
+	 $('body,html').animate({ scrollTop: 0 });
+	 var shang = $(this).parents("li.tab");
+	 var index = shang.index();
+	 if(shang.hasClass("on")){
+		 shang.removeClass("on");
+	 }else {
+		 shang.addClass("on").siblings().removeClass("on");
+	 }
+	 });
+	/*small*/
+	$(".jcyd-word-tab ul li").bind("click",function () {
+		var index =$(this).index();
+		var sy= $(".jcyd-word").parents("li.on");
+		var sylast = sy.find(".jcyd-word-tab-ul ul li");
+		sylast.eq(index).addClass("on").siblings().removeClass("on");
+		$(this).addClass("on").siblings().removeClass("on");
+	});
+</script>
+</body>
+</html>
