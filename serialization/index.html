@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- release v4.2.8, copyright 2014 - 2015 Kartik Visweswaran -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Krajee</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <form>
+            <div><input type="text" name="a" value="1" id="a" /></div><br>
+            <div><input type="hidden" name="c" value="3" id="c" /></div>
+            <div>
+                <textarea name="d" rows="8" cols="30">4</textarea>
+            </div>
+            <div><select name="e">
+                <option value="5" selected="selected">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select></div>
+            <input type="radio" name="radio" id="radio1" value="1" />1
+            <input type="radio" name="radio" id="radio2" value="2" />2
+            <div>
+                <input type="checkbox" name="f" value="8" id="f" />
+            </div>
+            <div>
+                <input type="submit" name="g" value="Submit" id="g" />
+            </div>
+        </form>
+    </body>
+	<script>
+        $('form').submit(function() {
+            function paramString2obj (serializedParams) {//转序列化方法封装
+                var obj={};
+                function evalThem (str) {
+                    var strAry = new Array();
+                    strAry = str.split("=");
+                    //使用decodeURIComponent解析uri 组件编码
+                    for(var i = 0; i < strAry.length; i++){
+                        strAry[i] = decodeURIComponent(strAry[i]);
+                    }
+                    var attributeName = strAry[0];
+                    var attributeValue = strAry[1].trim();
+                    //如果值中包含"="符号，需要合并值
+                    if(strAry.length > 2){
+                        for(var i = 2;i<strAry.length;i++){
+                            attributeValue += "="+strAry[i].trim();
+                        }
+                    }
+                    if(!attributeValue){
+                        return ;
+                    }
+                    var attriNames = attributeName.split("."),
+                        curObj = obj;
+                    for(var i = 0; i < (attriNames.length - 1); i++){
+                        curObj[attriNames[i]]?"":(curObj[attriNames[i]] = {});
+                        curObj = curObj[attriNames[i]];
+                    }
+                    //使用赋值方式obj[attributeName] = attributeValue.trim();替换
+                    //eval("obj."+attributeName+"=\""+attributeValue.trim()+"\";");
+                    //解决值attributeValue中包含单引号、双引号时无法处理的问题
+                    curObj[attriNames[i]] = attributeValue.trim();
+                };
+                var properties = serializedParams.split("&");
+                for (var i = 0; i < properties.length; i++) {
+                    //处理每一个键值对
+                    evalThem(properties[i]);
+                };
+                return obj;
+            }
+            var sz = $(this).serialize();
+            console.log(paramString2obj(sz));
+            return false;
+        });
+    </script>
+</html>
